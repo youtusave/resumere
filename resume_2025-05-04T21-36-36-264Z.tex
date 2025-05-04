@@ -1,0 +1,156 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Md Sadman Sakib} \\ \vspace{1pt}
+\small (669) 283-9433 $|$ \href{mailto:sakibsadman@gmail.com}{\underline{sakibsadman@gmail.com}} $|$
+\href{https://www.linkedin.com/in/sakibsadman/}{\underline{linkedin.com/in/sakibsadman}} $|$
+\href{https://github.com/sakibsadman}{\underline{github.com/sakibsadman}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+A highly motivated and detail-oriented software engineer with a strong foundation in computer science principles and proven experience in developing and implementing innovative solutions. Eager to contribute technical expertise and collaborative skills to a dynamic team focused on creating high-quality software products.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{San Jose State University}{San Jose, CA}{Master of Science in Software Engineering}{August 2022 - Present}
+% Optional: list coursework in a horizontal format, separate by commas
+\resumeSubheading{North South University}{Dhaka, Bangladesh}{Bachelor of Science in Computer Science and Engineering}{January 2017 - December 2020}
+% Optional: list coursework in a horizontal format, separate by commas
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{BinarApps}{Remote}{Software Engineer}{June 2021 - July 2022}
+\resumeItemListStart
+\resumeItem{Developed and maintained web applications using React, Node.js, and MongoDB.}
+\resumeItem{Collaborated with cross-functional teams to deliver high-quality software products.}
+\resumeItem{Participated in code reviews and contributed to improving the overall codebase.}
+\resumeItem{Implemented RESTful APIs for seamless data exchange between front-end and back-end systems.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{COVID-19 Tracker} $|$ \emph{React, Node.js, MongoDB}}{2021}
+\resumeItemListStart
+\resumeItem{Developed a web application to track COVID-19 cases and vaccination rates.}
+\resumeItem{Utilized React for the front-end, Node.js for the back-end, and MongoDB for the database.}
+\resumeItem{Implemented features such as data visualization, user authentication, and real-time updates.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{E-commerce Website} $|$ \emph{React, Redux, Node.js, Express, MongoDB}}{2020}
+\resumeItemListStart
+\resumeItem{Designed and developed a full-stack e-commerce website.}
+\resumeItem{Implemented features such as product catalog, shopping cart, checkout process, and order management.}
+\resumeItem{Utilized React and Redux for the front-end, Node.js and Express for the back-end, and MongoDB for the database.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Java, JavaScript, Python, C++, C\#} \\
+\textbf{Frontend Technologies}{: React, Redux, HTML, CSS, Bootstrap} \\
+\textbf{Backend Technologies}{: Node.js, Express, MongoDB, RESTful APIs} \\
+\textbf{Tools & Technologies}{: Git, Docker, AWS, Azure, Jenkins}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
