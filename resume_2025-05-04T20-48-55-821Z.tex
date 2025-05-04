@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Ricardo Rodriguez} \\ \vspace{1pt}
+\small (123) 456-7890 $|$ \href{mailto:ricardo.rodriguez@email.com}{\underline{ricardo.rodriguez@email.com}} $|$
+\href{https://linkedin.com/in/ricardorodriguez}{\underline{linkedin.com/in/ricardorodriguez}} $|$
+\href{https://github.com/ricardorodriguez}{\underline{github.com/ricardorodriguez}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Highly motivated and skilled software engineer with experience in full-stack development, data analysis, and machine learning. Eager to contribute to innovative projects and leverage technical expertise to solve complex problems. Proven ability to learn quickly and adapt to new technologies in a fast-paced environment.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Texas at Austin}{Austin, TX}{Master of Science in Computer Science}{2020 - 2022}
+\resumeSubItem{GPA: 3.8/4.0}
+\resumeSubheading{University of California, Berkeley}{Berkeley, CA}{Bachelor of Science in Electrical Engineering and Computer Science}{2016 - 2020}
+\resumeSubItem{GPA: 3.7/4.0}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Google}{Mountain View, CA}{Software Engineer}{2022 - Present}
+\resumeItemListStart
+\resumeItem{Developed and maintained key features for Google Maps using Java and C++.}
+\resumeItem{Improved the performance of the map rendering engine by 15\% through code optimization.}
+\resumeItem{Collaborated with cross-functional teams to design and implement new user interfaces.}
+\resumeItemListEnd
+\resumeSubheading{Amazon}{Seattle, WA}{Software Engineering Intern}{Summer 2021}
+\resumeItemListStart
+\resumeItem{Built a recommendation system prototype using Python and machine learning algorithms.}
+\resumeItem{Conducted data analysis to identify areas for improvement in the customer experience.}
+\resumeItem{Presented findings and recommendations to senior management.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Personal Website} $|$ \emph{React, Node.js, Express}}{2023}
+\resumeItemListStart
+\resumeItem{Designed and developed a personal website to showcase my skills and projects.}
+\resumeItem{Implemented a responsive design to ensure optimal viewing on all devices.}
+\resumeItem{Deployed the website to a cloud platform using Docker and Kubernetes.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Machine Learning Model for Image Recognition} $|$ \emph{Python, TensorFlow, Keras}}{2022}
+\resumeItemListStart
+\resumeItem{Developed a machine learning model for image recognition using TensorFlow and Keras.}
+\resumeItem{Trained the model on a large dataset of images and achieved an accuracy of 95\%.}
+\resumeItem{Implemented the model in a web application using Flask.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Programming Languages}{: Python, Java, C++, JavaScript, Go, C\#} \\
+\textbf{Web Development}{: React, Node.js, Express, HTML, CSS} \\
+\textbf{Databases}{: SQL, NoSQL, MongoDB, PostgreSQL} \\
+\textbf{Cloud Computing}{: AWS, Azure, GCP, Docker, Kubernetes} \\
+\textbf{Machine Learning}{: TensorFlow, Keras, Scikit-learn}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
