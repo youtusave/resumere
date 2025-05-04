@@ -1,0 +1,144 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Halil Ibrahim Yilmaz} \\ \vspace{1pt}
+\small +90 (539) 336 48 06 $|$ \href{mailto:halilyilmaz@std.sehir.edu.tr}{\underline{halilyilmaz@std.sehir.edu.tr}} $|$
+\href{https://www.linkedin.com/in/halilyilmaz}{\underline{linkedin.com/in/halilyilmaz}} $|$
+\href{https://github.com/halilylmz}{\underline{github.com/halilylmz}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Highly motivated and detail-oriented Computer Science student with a strong foundation in software development principles and a passion for creating innovative solutions. Proven ability to work effectively in both individual and team settings, contributing to successful project outcomes. Eager to apply technical skills and problem-solving abilities to contribute to a dynamic and challenging software engineering role.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Istanbul Sehir University}{Istanbul, Turkey}{BSc, Computer Science}{2016 - 2020}
+\resumeSubItem{GPA: 3.27/4.00}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Freelance}{2018 - Present}{Software Developer}{Remote}
+\resumeItemListStart
+\resumeItem{Developed and maintained web applications using JavaScript, HTML, and CSS.}
+\resumeItem{Collaborated with clients to gather requirements and deliver customized solutions.}
+\resumeItem{Implemented responsive designs to ensure optimal user experience across various devices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Personal Website} $|$ \emph{HTML, CSS, JavaScript}}{2019}
+\resumeItemListStart
+\resumeItem{Developed a personal website to showcase skills and projects.}
+\resumeItem{Implemented a responsive design for optimal viewing on different devices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Java, JavaScript, C, HTML, CSS} \\
+\textbf{Tools}{: Git, VS Code} \\
+\textbf{Operating Systems}{: Windows, Linux}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
