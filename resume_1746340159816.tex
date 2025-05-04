@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc} % <-- ADDED: Specify UTF-8 input encoding
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Danny Nguyen} \\ \vspace{1pt}
+\small Vancouver, BC $|$ \href{mailto:tdn.danny@gmail.com}{\underline{tdn.danny@gmail.com}} $|$
++1 (236) 838-3069
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{\textbf{Technical}{: Microsoft 365 (Word, Excel, PowerPoint, Outlook), Google Workspace (Google Suite, Docs, Sheets, Slides), Virtual Meeting Platform (Google Meet, Zoom, MS Teams)} \\
+\textbf{Applied}{: Technology Proficiency, Record and Data Management, Scheduling} \\
+\textbf{Soft}{: Communication, Organizational, Documentation and Reporting, Time Management and Prioritization, Project Management, Problem-Solving, Critical Thinking, Multi-tasking, Customer Service, Adaptability, Attention to Detail} }}
+\end{itemize}
+
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{BCIT Retirees’ Association}{September 2024 – December 2024}{Computer Systems Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Improved membership management and communication, streamlining administrative tasks for admins and 500+ members, achieving a 35\% efficiency increase.}
+\resumeItem{Integrated Microsoft Excel for preparing reports, analytics, visualization, and organization data recording.}
+\resumeItem{Planned development stages, managed timelines with Trello, and conducted daily team meetings via Zoom.}
+\resumeItem{Documented project requirements, risks, user guides, and maintenance details using Google Docs and Google Sheets.}
+\resumeItem{Presented progress and communicated complex technical concepts to stakeholders.}
+\resumeItemListEnd
+
+\resumeSubheading{WALLIT}{April 2024 – May 2024}{Computer Systems Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Managed a financial transaction tracking system and collaborated with team members and stakeholders through daily meetings.}
+\resumeItem{Conducted comprehensive analysis of project requirements, business strategy, and risk assessment, presenting findings to audiences.}
+\resumeItem{Consulted and advised on business model development, delivering high-quality deliverables that met project objectives.}
+\resumeItem{Managed project lifecycle aspects using Microsoft Office Suite (Excel, Word, PowerPoint), resulting in a 30\% increase in data accessibility.}
+\resumeItemListEnd
+
+\resumeSubheading{Pacific Salmon Foundation}{May 2023 – July 2023}{Sales And Marketing Representative}{Metro Vancouver Area, BC}
+\resumeItemListStart
+\resumeItem{Persuaded donors on monthly donations through door-to-door campaigns, securing recurring contributions.}
+\resumeItem{Managed donor data in a PCI-compliant CRM, ensuring accurate entry and secure record-keeping.}
+\resumeItem{Built rapport with prospects, streamlining the donation process and boosting donor satisfaction.}
+\resumeItemListEnd
+
+\resumeSubheading{Gladstone Learning Centre – Volunteering}{September 2020 – March 2021}{Office Assistant and Tutoring}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Managed scheduling and provided administrative support for a cohort of 30+ students.}
+\resumeItem{Maintained detailed student records and tracked progress using Microsoft Excel and Word.}
+\resumeItem{Facilitated communication and coordinated support services between students, teachers, and counsellors.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Graduated: December 2024}{Diploma, Computer Systems Technology}{Burnaby, BC}
+\resumeSubItem{Advanced Software Proficiency | Project Management | Business Systems | Communication | Report and Documentation}
+\resumeSubheading{Alison Certificate}{April 2025}{Administrative Support}{}
+\resumeSubItem{Executive Assistant | Business Administration | Office Management | Communication Skills | Organization Productivity}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
