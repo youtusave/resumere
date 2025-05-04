@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Md Ali} \\ \vspace{1pt}
+\small (732) 993-7900 $|$ \href{mailto:mdali.rahman.rony@gmail.com}{\underline{mdali.rahman.rony@gmail.com}} $|$
+\href{https://www.linkedin.com/in/md-ali-rahman/}{\underline{linkedin.com/in/md-ali-rahman}} $|$
+\href{https://github.com/MdAliRahman}{\underline{github.com/MdAliRahman}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Rutgers University - New Brunswick}{Expected May 2024}{Bachelor of Science in Computer Science}{New Brunswick, NJ}
+\resumeSubItem{Relevant Coursework: Data Structures and Algorithms, Design and Analysis of Computer Algorithms, Computer Architecture, Principles of Programming Languages, Software Methodology, Database Management Systems, Data Management for Data Science, Introduction to Discrete Mathematics}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Rutgers University}{Jan 2023 - Present}{Learning Assistant}{New Brunswick, NJ}
+\resumeItemListStart
+\resumeItem{Facilitate student learning and comprehension of Data Structures and Algorithms concepts through tutoring and mentorship.}
+\resumeItem{Assist the professor in grading assignments, providing feedback, and maintaining an organized learning environment.}
+\resumeItemListEnd
+
+\resumeSubheading{TechFlex LLC}{June 2022 - August 2022}{Software Development Intern}{Piscataway, NJ}
+\resumeItemListStart
+\resumeItem{Developed and maintained web applications using React, Node.js, and other modern web technologies.}
+\resumeItem{Collaborated with a team of developers to implement new features and improve existing functionality.}
+\resumeItem{Participated in code reviews and contributed to the development of coding standards.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Personal Website} $|$ \emph{React, JavaScript, HTML, CSS}}{May 2023 - Present}
+\resumeItemListStart
+\resumeItem{Developed a personal website to showcase skills, projects, and experience.}
+\resumeItem{Implemented a responsive design that adapts to different screen sizes and devices.}
+\resumeItem{Deployed the website using Netlify.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Expense Tracker} $|$ \emph{React, JavaScript, HTML, CSS}}{Jan 2023 - Feb 2023}
+\resumeItemListStart
+\resumeItem{Developed a React application to track income and expenses.}
+\resumeItem{Implemented features such as adding, editing, and deleting transactions, as well as displaying a summary of income and expenses.}
+\resumeItem{Utilized React hooks to manage state and side effects.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{To-Do List} $|$ \emph{JavaScript, HTML, CSS}}{Nov 2022 - Dec 2022}
+\resumeItemListStart
+\resumeItem{Developed a to-do list application using JavaScript, HTML, and CSS.}
+\resumeItem{Implemented features such as adding, deleting, and marking tasks as complete.}
+\resumeItem{Utilized local storage to persist data between sessions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{\textbf{Languages}{: Java, JavaScript, Python, C, C\#, HTML, CSS} \\
+\textbf{Frameworks/Libraries}{: React, Node.js, Express.js, jQuery, Bootstrap} \\
+\textbf{Databases}{: MySQL, MongoDB} \\
+\textbf{Tools}{: Git, GitHub, VS Code, IntelliJ IDEA, Eclipse, AWS} \\
+\textbf{Operating Systems}{: Windows, Linux, macOS}}
+\end{itemize}
+
+\section{Awards and Activities}
+\resumeSubHeadingListStart
+\resumeItem{Dean's List - Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023}
+\resumeItem{HackRU - Fall 2021}
+\resumeItem{RU programming team - 2020 - Present}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
