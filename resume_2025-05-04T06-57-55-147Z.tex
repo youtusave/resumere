@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape DANNY NGUYEN} \\ \vspace{1pt}
+\small dn.dannynguyen@hotmail.com $|$ (236) 838-3069
+\end{center}
+
+\section{Professional Summary}
+A business-oriented problem-solver with a background in IT, business systems analytics, and sales.  Skills include communication, data management, business assessment, and problem-solving. Seeking to leverage these organizational and interpersonal skills in a challenging role utilizing Java, Spring Boot, and Kotlin.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{WALLIT}{April 2024 - May 2024}{Computer Systems - Internship}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Engineered a financial transaction tracking system, demonstrating solid project and time management skills through effective collaboration with team members and stakeholders.}
+\resumeItem{Conducted comprehensive analysis of project requirements, business strategy, legal and regulatory compliance, and user experience, presenting findings to audiences effectively.}
+\resumeItem{Managed all aspects of the project lifecycle, utilizing Microsoft Office Suite (Excel, Word, PowerPoint) for data analysis, documentation, reporting, and task management, resulting in a 30\% increase in data accessibility.}
+\resumeItemListEnd
+\resumeSubheading{Paradies lagardère @ Vancouver International Airport}{May 2024 - August 2024}{Airport Warehouse Customer Service Associate}{Richmond, BC}
+\resumeItemListStart
+\resumeItem{Operated detail-oriented data entry, inventory management, and quality assurance procedures using SAP Fiori, ensuring 99\%+ accuracy on warehouse supplies assets valued over \$10,000 per day.}
+\resumeItem{Handled deliveries into airport gates, ensuring safety in the airport environment.}
+\resumeItemListEnd
+\resumeSubheading{BCIT Retirees' Association}{September 2024 - December 2024}{Computer Systems - Internship}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Improved membership management and communication, streamlining administrative tasks and resulting in a 35\% increase in workflow efficiency.}
+\resumeItem{Integrated Microsoft Excel for reporting, analytics, and data visualization, demonstrating strong analytical and problem-solving skills.}
+\resumeItem{Managed timelines and deliverables effectively with Trello, conducting daily team meetings and presenting project progress using Google Slides.}
+\resumeItem{Analyzed and documented project requirements, using Google Docs and Sheets for task analysis and reporting.}
+\resumeItemListEnd
+\resumeSubheading{Pacific Salmon Foundation}{May 2023 - July 2023}{Sales And Marketing Representative}{Metro Vancouver Area, BC}
+\resumeItemListStart
+\resumeItem{Conducted successful door-to-door sales campaigns, persuading individuals to commit to monthly donations.}
+\resumeItem{Demonstrated effective communication and interpersonal skills, building rapport with potential donors.}
+\resumeItem{Assisted clients with providing personal information to a secure PCI-compliant CRM system.}
+\resumeItem{Developed and honed face-to-face sales techniques, including persuasive communication and objection handling.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{2024}{Diploma, Computer Systems Technology}{Burnaby, BC}
+\resumeSubheading{Alison Certificate}{2025}{Administrative Support}{N/A}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{\textbf{Software Proficiency}: Microsoft Office Suite (Excel, Word, PowerPoint), Trello, Google Workspace (Docs, Sheets, Slides), SAP Fiori}
+\item{\textbf{Languages}:  (No explicit programming languages listed in resume)}
+\item{\textbf{Frameworks}: (No explicit frameworks listed in resume)}
+\item{\textbf{Other Skills}: Data Management, Business Systems Analytics, Communication, Report and Documentation, Project Management, Problem-Solving, Time Management, Customer Service}
+}
+\end{itemize}
+
+\end{document}
+```
