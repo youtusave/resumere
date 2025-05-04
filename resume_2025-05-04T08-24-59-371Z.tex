@@ -1,0 +1,144 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape John Doe} \\ \vspace{1pt}
+\small (123) 456-7890 $|$ \href{mailto:john.doe@email.com}{\underline{john.doe@email.com}} $|$
+\href{https://www.linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $|$
+\href{https://github.com/johndoe}{\underline{github.com/johndoe}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+As a detail-oriented and proactive QA Engineer with experience in software testing and automation, I am seeking a challenging role where I can leverage my skills to ensure the delivery of high-quality software products. Proven ability to identify and resolve defects, develop and execute test plans, and collaborate effectively with development teams to improve software quality.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of California, Berkeley}{Berkeley, CA}{Bachelor of Science in Computer Science}{2018 - 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{ABC Company}{2022 - Present}{QA Engineer}{San Francisco, CA}
+\resumeItemListStart
+\resumeItem{Developed and executed test plans and test cases for web and mobile applications.}
+\resumeItem{Identified, documented, and tracked software defects using Jira.}
+\resumeItem{Collaborated with developers to reproduce and resolve defects.}
+\resumeItem{Performed regression testing, integration testing, and user acceptance testing.}
+\resumeItem{Automated testing processes using Selenium and Python, resulting in a 20\% reduction in manual testing effort.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{E-commerce Website Testing} $|$ \emph{Selenium, Python, Jira}}{2023}
+\resumeItemListStart
+\resumeItem{Developed automated test scripts to validate key functionalities of an e-commerce website.}
+\resumeItem{Implemented a CI/CD pipeline for automated testing, ensuring continuous quality assurance.}
+\resumeItem{Identified and reported critical defects that improved the website's performance and user experience.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{\textbf{Programming Languages}{: Python, Java, JavaScript} \\
+\textbf{Testing Tools}{: Selenium, JUnit, TestNG, Jira, Postman} \\
+\textbf{Operating Systems}{: Windows, macOS, Linux} \\
+\textbf{CI/CD}{: Jenkins, Git} }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
