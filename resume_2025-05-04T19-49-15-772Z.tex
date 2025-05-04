@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Jane Doe} \\ \vspace{1pt}
+\small 123-456-7890 $|$ \href{mailto:jane.doe@email.com}{\underline{jane.doe@email.com}} $|$
+\href{https://linkedin.com/in/janedoe}{\underline{linkedin.com/in/janedoe}} $|$
+\href{https://github.com/janedoe}{\underline{github.com/janedoe}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Highly motivated and detail-oriented Junior Software Engineer with six months of experience and two internships, seeking a challenging role to leverage skills in Java, Kotlin, and Spring Boot. Eager to contribute to innovative projects and continue learning new technologies.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Example}{City, State}{Bachelor of Science in Computer Science}{2020 - 2024}
+% Optional: list coursework in a horizontal format, separate by commas
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{ABC Software Inc.}{June 2024 - Present}{Junior Software Engineer}{City, State}
+\resumeItemListStart
+\resumeItem{Developed and maintained RESTful APIs using Java and Spring Boot, resulting in a 15\% increase in application performance.}
+\resumeItem{Collaborated with senior engineers to implement new features and improve existing codebase.}
+\resumeItem{Wrote unit and integration tests to ensure code quality and reliability.}
+\resumeItemListEnd
+
+\resumeSubheading{XYZ Corp.}{Summer 2023}{Software Engineering Intern}{City, State}
+\resumeItemListStart
+\resumeItem{Assisted in the development of a mobile application using Kotlin and Android SDK.}
+\resumeItem{Contributed to the design and implementation of user interfaces and backend services.}
+\resumeItem{Participated in code reviews and debugging sessions.}
+\resumeItemListEnd
+
+\resumeSubheading{123 Industries}{Summer 2022}{Software Development Intern}{City, State}
+\resumeItemListStart
+\resumeItem{Developed and maintained web applications using Java, Spring, and MySQL.}
+\resumeItem{Implemented new features and fixed bugs in existing applications.}
+\resumeItem{Collaborated with a team of developers to deliver high-quality software on time and within budget.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Personal Portfolio Website} $|$ \emph{HTML, CSS, JavaScript}}{2023}
+\resumeItemListStart
+\resumeItem{Developed a personal website to showcase skills and projects.}
+\resumeItem{Implemented a responsive design to ensure compatibility with different devices.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Task Management Application} $|$ \emph{Java, Spring Boot, MySQL}}{2024}
+\resumeItemListStart
+\resumeItem{Developed a task management application to track and manage tasks.}
+\resumeItem{Implemented user authentication and authorization features.}
+\resumeItem{Designed and implemented a RESTful API for accessing and manipulating task data.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Java, Kotlin, SQL, JavaScript, HTML, CSS} \\
+\textbf{Frameworks/Libraries}{: Spring Boot, Spring, Android SDK, JUnit} \\
+\textbf{Tools}{: Git, Maven, Gradle, IntelliJ IDEA, Docker}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
