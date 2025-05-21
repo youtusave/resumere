@@ -1,0 +1,146 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Rinnie} \\ \vspace{1pt}
+\small %123-456-7890 $|$ \href{mailto:email@domain.com}{\underline{email@domain.com}} $|$
+% \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/yourprofile}} $|$
+% \href{https://github.com/...}{\underline{github.com/yourprofile}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Seeking an Administrative Assistant position where I can leverage my organizational, communication, and web design skills to contribute to a dynamic team. Eager to apply my experience in tutoring, order management, and freelance web design to support administrative tasks and enhance office efficiency.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Self-Employed}{Ongoing}{Web Designer Freelance}{}
+\resumeItemListStart
+\resumeItem{Designed and developed websites for clients, ensuring user-friendly interfaces and optimal performance.}
+\resumeItem{Managed client communication and project timelines, delivering projects on time and within budget.}
+\resumeItem{Utilized various web design tools and technologies to create visually appealing and functional websites.}
+\resumeItem{Adapted designs based on client feedback and industry trends, ensuring client satisfaction.}
+\resumeItemListEnd
+
+\resumeSubheading{Kozu}{}{Order Manager}{}
+\resumeItemListStart
+\resumeItem{Managed and processed customer orders, ensuring accuracy and timely fulfillment.}
+\resumeItem{Communicated with customers to resolve order-related inquiries and issues.}
+\resumeItem{Maintained accurate records of orders and inventory levels.}
+\resumeItem{Collaborated with other team members to improve order processing efficiency.}
+\resumeItemListEnd
+
+\resumeSubheading{Fraser Church}{}{Tutor}{}
+\resumeItemListStart
+\resumeItem{Provided tutoring services to students, helping them improve their understanding of various subjects.}
+\resumeItem{Developed customized lesson plans based on individual student needs and learning styles.}
+\resumeItem{Monitored student progress and provided feedback to students and parents.}
+\resumeItem{Created a positive and supportive learning environment for students.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Web Design}{: HTML, CSS, JavaScript, Website Development} \\
+\textbf{Administrative}{: Data Entry, Record Keeping, Customer Service, Communication} \\
+\textbf{Other}{: Tutoring, Order Management, Client Communication}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
