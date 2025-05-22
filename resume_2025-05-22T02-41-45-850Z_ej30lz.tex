@@ -1,0 +1,141 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Future Doctor} \\ \vspace{1pt}
+\small Aspiring to Heal and Innovate (Despite My Age!)
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Objective} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+To learn and grow into a skilled and compassionate doctor/surgeon, contributing to advancements in medical science with a fresh perspective.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Preschool of Awesomeness}{My Crib}{Future Doctor}{Currently Enrolled}
+% Optional: list coursework in a horizontal format, separate by commas
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Household Management}{Present}{Chief Happiness Officer}{Home}
+\resumeItemListStart
+\resumeItem{Successfully manage the emotional well-being of parental units.}
+\resumeItem{Pioneered innovative napping techniques, resulting in increased overall household productivity.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Operation: Clean Up Toys} $|$ \emph{Teamwork, Coordination}}{Ongoing}
+\resumeItemListStart
+\resumeItem{Leading a critical project to maintain a safe and stimulating play environment.}
+\resumeItem{Developing advanced strategies for efficient toy storage and retrieval.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Babbling, Basic English} \\
+\textbf{Medical Interests}{: Anatomy (of stuffed animals), First Aid (for boo-boos)} \\
+\textbf{Core Competencies}{: Cuteness, Resilience, Unwavering Optimism}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
