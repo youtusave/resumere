@@ -1,0 +1,135 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Danny Nguyen} \\ \vspace{1pt}
+\small \href{mailto:tdn.danny@gmail.com}{\underline{tdn.danny@gmail.com}} $|$
++1 (236) 838-3069
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Organized Administrative Professional – skilled in information systems management, document control, and stakeholder
+communication. Leveraging Microsoft 365, Google Workspace, and administrative tools effectively to streamline operations and
+support team efficiency.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Gladstone Learning Centre – Volunteering}{September 2020 – March 2021}{Office Assistant}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Managed scheduling and provided administrative support for a cohort of 30+ students.}
+\resumeItem{Maintained detailed student records and tracked progress using Microsoft Excel and Word.}
+\resumeItem{Facilitated communication and coordinated support services between students, teachers, and counsellors.}
+\resumeItem{Assisted and mentored students in overcoming academic challenges following the COVID-19 disruptions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Tools}{: Microsoft 365 (Word, Excel, PowerPoint, Outlook), Google Workspace (Google Suite, Docs, Sheets, Slides, Gmail), Communication Platforms (Google Meet, Zoom, MS Teams, Slack), Adobe Acrobat, Trello, Cloud Storage, QuickBooks, CRM} \\
+\textbf{Applied Skills}{: Technology Proficiency, Record and Data Management, Schedule Management, Documentation and Reporting} \\
+\textbf{Soft Skills}{: Communication, Organizational, Team Collaboration, Time Management and Prioritization, Project Management, Problem-Solving, Critical Thinking, Multi-Tasking, Customer Service, Adaptability, Attention to Detail}
+} \\
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Graduated: December 2024}{Diploma, Computer Systems Technology}{Burnaby, BC}
+\resumeSubSubheading{Advanced Software Proficiency $|$ Project Management $|$ Business Systems $|$ Communication $|$ Report and Documentation}{}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
