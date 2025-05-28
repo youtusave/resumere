@@ -1,0 +1,136 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Ron Aldred Lipat} \\ \vspace{1pt}
+\small +1(672) 515-8199 $|$ \href{mailto:ronaldredlipat02@gmail.com}{\underline{ronaldredlipat02@gmail.com}} $|$
+11571 Williams Rd. Richmond, BC V7A 1J3
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary} % Optional. If the resume is already long, no need for summary. ONLY need when resume is still short
+Detail-oriented, motivated, and resourceful professional with a strong track record of driving success through innovative solutions and strategic thinking. Known for exceptional communication skills and the ability to build strong relationships across diverse teams. Adept at leveraging analytical insights to optimize processes and achieve organizational goals. Passionate about contributing to a dynamic team and making a meaningful impact in a fast-paced environment.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Anhart}{01/2023 - 04/2023}{Admin/Marketing Assistant (Co-op)}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Undertaking daily administrative tasks to ensure the functionality and coordination of the department's activities.}
+\resumeItem{Collaborating with the marketing manager, internal teams, clients, and partners on marketing strategy.}
+\resumeItem{Conducted market research to gather insights, informing development of more effective marketing campaigns.}
+\resumeItem{Boosted email campaign success, crafting compelling newsletters that improved open and click-through rates.}
+\resumeItem{Analyzed data to uncover insights and identify key opportunities to inform strategic decisions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Core Skills}{: Leadership, Organization, Problem-solving, Critical Thinking, Systems Analysis, Attention to Detail, Flexible and Adaptable, Safety awareness, Self-Motivated} \\
+\textbf{Communication}{: Verbal and Writing Communication skills} \\
+\textbf{Technical Skills}{: MS Office (Excel, Outlook)}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Vancouver Community College}{Vancouver, Canada}{Canadian Business Management Post-Degree Diploma}{}
+\resumeSubheading{PATTS College of Aeronautics}{Philippines}{BS Industrial Engineering}{}
+% Optional: list coursework in a horizontal format, separate by commas
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
