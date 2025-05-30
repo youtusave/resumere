@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Insurance Agency</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            color: #333;
+            animation: gradientAnimation 10s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, #e0e0e0, #f0f0f0);
+            }
+        }
+
+
+        header {
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Insurance Agency</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Protecting What Matters Most</h2>
+            <p>We offer comprehensive insurance solutions tailored to your needs. Get a free quote today!</p>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <h3>Auto Insurance</h3>
+                <p>Protect yourself and your vehicle with our affordable auto insurance plans.</p>
+            </div>
+
+            <div class="service">
+                <h3>Home Insurance</h3>
+                <p>Secure your home and belongings with our comprehensive home insurance coverage.</p>
+            </div>
+
+            <div class="service">
+                <h3>Life Insurance</h3>
+                <p>Provide financial security for your loved ones with our life insurance policies.</p>
+            </div>
+        </section>
+
+        <button class="contact-button" onclick="alert('Contact us at 1-800-INSURE-NOW')">Contact Us</button>
+    </main>
+
+    <footer>
+        &copy; 2023 Your Insurance Agency. All rights reserved.
+    </footer>
+</body>
+</html>
