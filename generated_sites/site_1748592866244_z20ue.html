@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tinder Swipe Animation</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e0c3fc, #8ec5fc);
+  overflow: hidden;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  border: 5px solid #333;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.screen-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Enhanced transition */
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.screen:nth-child(1) {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.screen:nth-child(2) {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.screen:nth-child(3) {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.screen:nth-child(4) {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f64f59);
+}
+
+/* Animation */
+@keyframes swipeRight {
+  0% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(100%); opacity: 0.5;}
+  100% { transform: translateX(0); opacity: 0; } /* Fully transparent at the end */
+}
+
+@keyframes swipeLeft {
+  0% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(-100%); opacity: 0.5;}
+  100% { transform: translateX(0); opacity: 0; } /* Fully transparent at the end */
+}
+
+.screen.swipe-right {
+  animation: swipeRight 2s forwards; /* Keep the final state */
+}
+
+.screen.swipe-left {
+  animation: swipeLeft 2s forwards; /* Keep the final state */
+}
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="screen-container">
+    <div class="screen">Problem Solver</div>
+    <div class="screen">Software Engineer</div>
+    <div class="screen">'AI will replace you'</div>
+    <div class="screen">Full-Stack Developer</div>
+  </div>
+</div>
+
+<script>
+  const screenContainer = document.querySelector('.screen-container');
+  const screens = document.querySelectorAll('.screen');
+  let currentIndex = 0;
+  let swiping = false;
+
+  function swipe() {
+    if (swiping) return;
+    swiping = true;
+
+    let swipeDirection = (currentIndex === 0 || currentIndex === 1) ? 'swipe-right' : 'swipe-left';
+
+    screens[currentIndex].classList.add(swipeDirection);
+
+    setTimeout(() => {
+      screens[currentIndex].classList.remove(swipeDirection);
+      currentIndex = (currentIndex + 1) % screens.length;
+      screenContainer.style.transition = 'none'; // Disable transition during repositioning
+
+      //Move to the back. Without transition to avoid weird animations
+      screenContainer.appendChild(screens[0]);
+      screens = document.querySelectorAll('.screen');
+      screenContainer.style.transform = `translateX(0%)`;
+
+      // Force reflow to reset transform (prevent initial transition)
+      void screenContainer.offsetWidth;
+
+      // Re-enable transition for next swipe
+      screenContainer.style.transition = 'transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55)';
+      swiping = false;
+    }, 2000); // Match the animation duration
+  }
+
+  setInterval(swipe, 3000); // Swipe every 3 seconds
+</script>
+
+</body>
+</html>
