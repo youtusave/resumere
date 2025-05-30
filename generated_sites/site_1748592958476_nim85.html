@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tinder Phone</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  overflow: hidden;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  border: 4px solid #333;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  background-color: #eee;
+  text-align: center;
+  animation: swipe 16s linear infinite;
+}
+
+.screen:nth-child(1) {
+  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  color: white;
+  animation-delay: 0s;
+}
+
+.screen:nth-child(2) {
+  background: linear-gradient(to bottom, #00c6fb, #005bea);
+  color: white;
+  animation-delay: -4s;
+}
+
+.screen:nth-child(3) {
+  background: linear-gradient(to bottom, #f7797d, #fbb448);
+  color: white;
+  animation-delay: -8s;
+}
+
+.screen:nth-child(4) {
+  background: linear-gradient(to bottom, #43cea2, #185a9d);
+  color: white;
+  animation-delay: -12s;
+}
+
+.hand {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVR4nO2aT4hOURjHf54r7/5/1o0oSQhY3Y+Mh/5C4e23Zc1KIEU6M4H6w0EIIiL55hF3i4M6M66F4eQgiI7/7W7h733nvN25t3vX5nZ995wz3nOuc+95+l3nOt0jP8rGgWkMymI2lS6VqZzKaTaJ5jXWqWz+VyQfR6fQjI5/MpkZkMpn4qFAr1p7Va7Q0ul0rG5n9g2a5FIsF/y1Uq9UM6HQ6g6JjY30kEAiEOK/X60g0Gq2cTCYT8W5XV7u9Xg+EwmEfH3l5eX8UCAQ+nQ6HQ94h5uXlJbDa7X4qKipC/H6/i1Gj0fjOzs5E3sD09HQ2m80+pmn4+PjY+O/v75eTyeQ/yvj4eObm5kK8b7PZ7LBYLNLs9s3NzWk6nT6n0+n8bDZ7QyqVip7FYrHP6XS60b/g4OD07u7u7F3H4/F4v/Hx8d6Uf6T6iUQikfM8T/W73W45xV4nJyf9LBaL7JzZbNbQ6/X2vK+1Wq08hUKB183NzZ2E+n/5fD4f/y4Wi+0cHR19B2xsbIQ/D4fDXhYXF+kXExPTQzKZTOrA7t27wXy/3/+F+xKJiYlT6+vrc3R0dIT5+fn3wNfX16G/v79j9Ho9t9nZ2Wvj4+Px6Oj09IT6+vob1cXFhbvHjx/6/r38/Hyq5/O7t27dwv0h99vb2+t27969J97e3vp99uzZ/2PevHkH+fX19aRbrVa/hL7v3LlzD+a4XN/x8fH7v/n5+e644U2l8tlj8YY+1jX+wNq/i6/B8oP5g2x8u8U+n+0/2t6b67kY0mUyc/y8vL/193d3a5/v+8e6XmX+x99y+J3Q/aX7zQ6nU7yBwUF/o2NjY075uXl3c3a2lrn4+Pj76/X6/2/4h7f7zH96/m982L7u0eJ5+lO9v63899+5h3d3f/r5Wq/1e/3/9v6O/v/6+rq8v3+g0G//g997c3P/m2trazx49elQ/5i4uLq17e3v/R58+fWqPHz/2wH7P70j2q8/n/4H/G4P/k2Rz/jL5l3jX+3y7XyXo/M6P/J9k8a3x58i3y/1k8d5e8f2xY317i8V5u+4+pYfKk3yK0/yO/K6i/y758709q9F97wYv+m8r85l81rP23U17i5f8317x228Xz1zP754h/7R7L4v93x7f/7d8M7v1/k7u8r92/xO/Q8i/9N889j+B98+j9n270f+m8X9y1+V37u6+8/P71h9/d3a3yS3t7e4e7u7s6/9/Pz39+g7/P5c4q+K16/nQAAAABJRU5ErkJggg==');
+  background-size: contain;
+  animation: swipeHand 16s linear infinite;
+}
+
+@keyframes swipe {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes swipeHand {
+  0% { right: 20px; opacity: 1; }
+  5% { right: 100px; opacity: 0; }
+  20% { right: -100px; opacity: 0; }
+  25% { right: 20px; opacity: 1; }
+
+  25% { right: 20px; opacity: 1; }
+  30% { right: 100px; opacity: 0; }
+  45% { right: -100px; opacity: 0; }
+  50% { right: 20px; opacity: 1; }
+
+  50% { right: 20px; opacity: 1; }
+  55% { right: 100px; opacity: 0; }
+  70% { right: -100px; opacity: 0; }
+  75% { right: 20px; opacity: 1; }
+
+  75% { right: 20px; opacity: 1; }
+  80% { right: 100px; opacity: 0; }
+  95% { right: -100px; opacity: 0; }
+  100% { right: 20px; opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="screen">Problem Solver - right</div>
+  <div class="screen">Software Engineer - right</div>
+  <div class="screen">'AI will replace you' - left</div>
+  <div class="screen">Full-Stack Developer - left</div>
+  <div class="hand"></div>
+</div>
+
+</body>
+</html>
