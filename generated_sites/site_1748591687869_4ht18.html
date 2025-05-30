@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block; /* Avoid unexpected line breaks */
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .pet-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .pet-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 10px 0; /* Maintain padding on top/bottom */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Pet Paradise!</h1>
+        <p>Your one-stop shop for all things pets.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Adopt a Pet</a>
+        <a href="#">Pet Care</a>
+        <a href="#">Community</a>
+    </nav>
+
+    <div class="container">
+        <h2>Featured Pets</h2>
+
+        <div class="pet-card">
+            <img src="https://placedog.net/300/200" alt="Dog Image">
+            <h3>Buddy</h3>
+            <p>A friendly Golden Retriever looking for a loving home.</p>
+            <button onclick="alert('Contact us to learn more about Buddy!')">Learn More</button>
+        </div>
+
+        <div class="pet-card">
+            <img src="https://placekitten.com/300/200" alt="Cat Image">
+            <h3>Whiskers</h3>
+            <p>A playful kitten eager to find her forever family.</p>
+            <button onclick="alert('Contact us to learn more about Whiskers!')">Learn More</button>
+        </div>
+
+        <div class="pet-card">
+            <img src="https://placedog.net/301/201" alt="Dog Image">
+            <h3>Rocky</h3>
+            <p>A loyal German Shepherd seeking an active owner.</p>
+            <button onclick="alert('Contact us to learn more about Rocky!')">Learn More</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pet Paradise. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // You could add more javascript functionality here if needed
+    </script>
+
+</body>
+</html>
