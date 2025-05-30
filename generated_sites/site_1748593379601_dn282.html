@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeVerse</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c3e50, #34495e);
+            color: #fff;
+            overflow-x: hidden;
+            animation: backgroundShift 10s infinite alternate;
+        }
+
+        @keyframes backgroundShift {
+            0% {
+                background: linear-gradient(to bottom, #2c3e50, #34495e);
+            }
+            100% {
+                background: linear-gradient(to bottom, #34495e, #4a6982);
+            }
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.1) 100%);
+            z-index: 0;
+            animation: shine 5s infinite linear;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .anime-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .anime-card {
+            width: 250px;
+            margin: 20px;
+            background: linear-gradient(to bottom, #34495e, #2c3e50);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .anime-card .anime-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .anime-card h2 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #ecf0f1;
+        }
+
+        .anime-card p {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+
+        .anime-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #2980b9, #3498db);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .anime-card a:hover {
+            background: linear-gradient(to right, #3498db, #2980b9);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #bdc3c7;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Search bar styling */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #search-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AnimeVerse</h1>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for anime...">
+        <button id="search-button">Search</button>
+    </div>
+
+
+    <div class="anime-container">
+        <div class="anime-card">
+            <img src="https://i.imgur.com/9j3sB2H.jpg" alt="Anime 1">
+            <div class="anime-details">
+                <h2>Attack on Titan</h2>
+                <p>A gripping tale of humanity's struggle against colossal humanoid creatures.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/vJvO5eR.jpg" alt="Anime 2">
+            <div class="anime-details">
+                <h2>Demon Slayer</h2>
+                <p>A young boy trains to become a demon slayer after his family is slaughtered.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/lJ8H5Zc.jpg" alt="Anime 3">
+            <div class="anime-details">
+                <h2>One Piece</h2>
+                <p>Follow Monkey D. Luffy on his quest to become the King of the Pirates.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/5B9t5q6.jpg" alt="Anime 4">
+            <div class="anime-details">
+                <h2>My Hero Academia</h2>
+                <p>In a world where superpowers are common, a young boy dreams of becoming a hero.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+         <div class="anime-card">
+            <img src="https://i.imgur.com/fhyf6kG.jpg" alt="Anime 5">
+            <div class="anime-details">
+                <h2>Jujutsu Kaisen</h2>
+                <p>A high schooler swallows a cursed talisman and becomes a sorcerer.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/9j3sB2H.jpg" alt="Anime 6">
+            <div class="anime-details">
+                <h2>Attack on Titan</h2>
+                <p>A gripping tale of humanity's struggle against colossal humanoid creatures.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+        <div class="anime-card">
+            <img src="https://i.imgur.com/vJvO5eR.jpg" alt="Anime 7">
+            <div class="anime-details">
+                <h2>Demon Slayer</h2>
+                <p>A young boy trains to become a demon slayer after his family is slaughtered.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/lJ8H5Zc.jpg" alt="Anime 8">
+            <div class="anime-details">
+                <h2>One Piece</h2>
+                <p>Follow Monkey D. Luffy on his quest to become the King of the Pirates.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.imgur.com/5B9t5q6.jpg" alt="Anime 9">
+            <div class="anime-details">
+                <h2>My Hero Academia</h2>
+                <p>In a world where superpowers are common, a young boy dreams of becoming a hero.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+
+         <div class="anime-card">
+            <img src="https://i.imgur.com/fhyf6kG.jpg" alt="Anime 10">
+            <div class="anime-details">
+                <h2>Jujutsu Kaisen</h2>
+                <p>A high schooler swallows a cursed talisman and becomes a sorcerer.</p>
+                <a href="#">Watch Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 AnimeVerse. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            var searchTerm = document.getElementById('search-input').value;
+            alert('Searching for: ' + searchTerm); // Replace with actual search logic
+        });
+    </script>
+</body>
+</html>
