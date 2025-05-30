@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Nguyen - Portfolio</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fde725);
+            color: white;
+            overflow-x: hidden; /* Hide horizontal scroll */
+        }
+
+        section {
+            padding: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fde725;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .profile img {
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+
+        .profile-text {
+            text-align: left;
+        }
+
+        .profile-text h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            font-size: 1.2em;
+        }
+
+        .about-me {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: slideIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .skill-card img {
+            width: 60px;
+            margin-bottom: 10px;
+            filter: grayscale(80%);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+            animation: zoomIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #fde725;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #fde725;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="profile">
+                <img src="https://via.placeholder.com/200" alt="Danny Nguyen">
+                <div class="profile-text">
+                    <h1>Danny Nguyen</h1>
+                    <p>I'm A <br> <strong>Software Engineer</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Danny Nguyen, a passionate software developer.</p>
+            <ul>
+                <li>Specialize in Full Stack Development.</li>
+                <li>With a background in Software Development, I enjoy creating innovative solutions that solve real-world problems.</li>
+                <li>My expertise spans across various technologies, including Node.js, React.js, Next.js, ASP.NET, and more.</li>
+                <li>I graduated from British Columbia Institute of Technology in Computer Systems Technology.</li>
+                <li>Worked on diverse real-word projects, ranging from Full Stack Web Application to Mobile Application.</li>
+            </ul>
+            <p>Feel free to reach out if you'd like to collaborate or just have a chat about tech and innovation. Let's build something amazing together!</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skillsets and Tech Stacks</h2>
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=JS" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=TS" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Java" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Python" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=C#" alt="C#">
+                    <p>C#</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Kotlin" alt="Kotlin">
+                    <p>Kotlin</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=C" alt="C">
+                    <p>C</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=SQL" alt="SQL">
+                    <p>SQL</p>
+                </div>
+            </div>
+
+            <h3>Backend Framework</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Node" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Express" alt="Express.js">
+                    <p>Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=.NET" alt=".NET">
+                    <p>.NET</p>
+                </div>
+            </div>
+
+            <h3>Databases</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=MongoDB" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=MySQL" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Firebase" alt="Firebase">
+                    <p>Firebase</p>
+                </div>
+            </div>
+
+            <h3>Frontend Framework</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=React" alt="React.js">
+                    <p>React.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Next" alt="Next.js">
+                    <p>Next.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=RN" alt="React Native">
+                    <p>React Native</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=HTML" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=CSS" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Tailwind" alt="Tailwind CSS">
+                    <p>Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Bootstrap" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+
+            <h3>UX/ UI Design Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Framer" alt="Framer Motion">
+                    <p>Framer Motion</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Figma" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=MUI" alt="Material UI">
+                    <p>Material UI</p>
+                </div>
+                  <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Aceternity" alt="Aceternity UI">
+                    <p>Aceternity UI</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Spline" alt="Spline">
+                    <p>Spline</p>
+                </div>
+            </div>
+
+            <h3>Workflow Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Git" alt="Git/ GitHub">
+                    <p>Git/ GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Trello" alt="Trello">
+                    <p>Trello</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Scrum" alt="Scrum - Agile">
+                    <p>Scrum - Agile</p>
+                </div>
+            </div>
+
+            <h3>Currently Learning</h3>
+             <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=AWS" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Angular" alt="Angular">
+                    <p>Angular</p>
+                </div>
+                 <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=PostgreSQL" alt="PostgreSQL">
+                    <p>PostgreSQL</p>
+                </div>
+                 <div class="skill-card">
+                    <img src="https://via.placeholder.com/60/4287f5/FFFFFF?text=Spring Boot" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Claim Craft</h3>
+                    <p>An AI application that helps insurance adjuster manage claims faster and more efficiently.</p>
+                    <p><strong>Tech Stack:</strong> React.js, HTML, CSS, JavaScript, ASP.NET, MongoDB, Azure App Service, OpenAI API, GoogleMap API</p>
+                </div>
+                <div class="project-card">
+                    <h3>Aether's Journal</h3>
+                    <p>A journal app that use AI to analyze your writing and become their therapist.</p>
+                    <p><strong>Tech Stack:</strong> ASP.NET, C#, .NET, Azure App Service, Google Gemini API, Razor Pages</p>
+                </div>
+                <div class="project-card">
+                    <h3>BeatPad</h3>
+                    <p>A desktop application to explore, mix, and record music.</p>
+                    <p><strong>Tech Stack:</strong> C#, .NET</p>
+                </div>
+                <div class="project-card">
+                    <h3>Anaconda Adventure</h3>
+                    <p>A desktop snake game application.</p>
+                    <p><strong>Tech Stack:</strong> Java, JavaFX</p>
+                </div>
+                 <div class="project-card">
+                    <h3>QuestQube</h3>
+                    <p>A web app platform that helps you discover new games based on your habits.</p>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, EJS Template, OpenAI API</p>
+                </div>
+                 <div class="project-card">
+                    <h3>InsurUs</h3>
+                    <p>A web app for saving insurance document.</p>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+                </div>
+                <div class="project-card">
+                    <h3>PyAdventure</h3>
+                    <p>A command line game application.</p>
+                    <p><strong>Tech Stack:</strong> Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Wonderful!</h2>
+                <p>Connect and reach out to me today!</p>
+                <a href="mailto:your.email@example.com">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Danny Nguyen</p>
+    </footer>
+</body>
+</html>
