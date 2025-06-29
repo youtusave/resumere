@@ -1,3 +1,7 @@
 /* CSS for index.css */
 body {padding:10px;
      background-color: red;}
+
+main {
+  background-color: red;
+}
