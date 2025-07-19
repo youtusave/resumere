@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Danny Nguyen} \\ \vspace{1pt}
+\small ndanny@email.com $|$ \href{https://linkedin.com/in/dndanny}{\underline{linkedin.com/in/dndanny}} $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$
+\href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Summary}
+Highly motivated and technically proficient recent graduate with a Diploma in Computer Systems Technology seeking a Technical Support role at FISPAN. Possessing strong problem-solving, communication, and customer service skills honed through software engineering internships and technical activities. Eager to leverage expertise in troubleshooting, documentation, and collaboration to provide exceptional support to clients and contribute to FISPAN's rapid growth.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Burnaby, BC}{Diploma, Computer Systems Technology – Concentration: Technical Programming}{Graduated: 2024}
+\resumeItem{Relevant Coursework: Data Structures and Algorithms | Web Development | Database Systems | Mobile App Development | Software Engineering | Object-Oriented Programming | Operating Systems | Enterprise Application Projects}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{BCIT Retirees’ Association}{Sep 2024 – Dec 2024}{Technology Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Effectively communicated complex technical concepts to all technical and non-technical stakeholders.}
+\resumeItem{Utilized Microsoft Office (Excel, Word, PowerPoint) for analysis, documentation, reporting, and presentations.}
+\resumeItem{Consulted and advised the organization on business strategy, legal and regulatory compliance, and risk assessment to support informed decision-making.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills} % Customize the format depends on the role
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: JavaScript, TypeScript, Python, C\#, Java, SQL} \\
+\textbf{Frontend}{: React.js, Next.js, HTML5, CSS3, React Native, Tailwind CSS, Bootstrap} \\
+\textbf{Backend/Databases}{: Node.js, Express.js, ASP.NET Core, MongoDB, MySQL, PostgreSQL, Firebase} \\
+\textbf{Tools/Others}{: AWS, Azure, Docker, Postman, Figma, Agile, Scrum, DevOps, CI/CD, S3, EC2, JUnit, Jest, Debugging}
+} \\
+% Add more rows for topics, or skills if have data, and depends on the industry
+\end{itemize}
+
+\section{Additional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{LS Travel Retail @ Vancouver International Airport}{Mar 2025 – Jul 2025}{Customer Service \& Stock Associate}{Richmond, BC}
+\resumeItemListStart
+\resumeItem{Demonstrated attention to detail and efficiency in inventory management and handling high-value stock across multiple store locations, ensuring accurate data entry and adherence to quality assurance standards.}
+\resumeItem{Communicated with internal clients and store personnel to track stock levels, restock shelves, and resolve stock issues.}
+\resumeItem{Demonstrated professionalism and accountability, ensuring operations met airport standards for service and security.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Resumere: Resume \& Cover Letter Builder} $|$ \emph{Next.js | React | TypeScript | Express.js | Node.js}}{}
+\resumeItemListStart
+\resumeItem{Reduced resume customization time by 60\% through AI-tailoring, with Next.js and Node.js server-side API routes by engineering REST API calls to Google Gemini for LaTeX content generation.}
+\resumeItem{Implemented responsive user interface and interactive components for file drag-and-drop, real-time status feedback, and an embedded LaTeX preview by leveraging Next.js, TypeScript, and TailwindCSS and deployed on Vercel.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Activities}
+\resumeSubHeadingListStart
+\resumeSubheading{Self-Employed}{}{Freelance Web Developer}{}
+\resumeItemListStart
+\resumeItem{Developed SEO-optimized, animated, and responsive websites with Next.js and TypeScript, enhanced online presence for local businesses, growing traffic and customer interaction by 20\%.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
