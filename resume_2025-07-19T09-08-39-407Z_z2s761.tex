@@ -1,0 +1,173 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape DANNY NGUYEN} \\ \vspace{1pt}
+\small \href{mailto:ndanny@email.com}{\underline{ndanny@email.com}} $|$
+\href{https://linkedin.com/in/dndanny}{\underline{linkedin.com/in/dndanny}} $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$
+\href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{BCIT Retirees’ Association}{Sep 2024 – Dec 2024}{Software Engineer Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Automated membership management and communication, reducing admin workload by 30\% for 500+ members.}
+\resumeItem{Designed and structured 15+ interactive features using JavaScript and Chart.js, improving data accessibility, enhancing dashboard responsiveness, and ensuring a smoother user experience.}
+\resumeItem{Optimized Node.js and Express.js RESTful APIs’ performance by tuning SQL queries connected to Amazon RDS (MySQL), reducing 40\% of execution time and enhancing custom graphs/charts visualization rendering efficiency.}
+\resumeItemListEnd
+\resumeSubheading{WALLIT}{Apr 2024 – May 2024}{Software Engineer Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Developed a secure backend architecture for a financial transaction management application; implemented data encryption, authentication, CRUD operations, and system integrations.}
+\resumeItem{Built RESTful APIs and designed MongoDB schemas using Node.js, Express.js, and TypeScript, cutting latency by 30\%.}
+\resumeItem{Optimized mobile API integration in React Native, reducing sync latency by 25\% for faster financial data retrieval.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Resumere: Resume \& Cover Letter Builder} $|$ \emph{Next.js | React | TypeScript | Express.js | Node.js}}{}
+\resumeItemListStart
+\resumeItem{Reduced resume customization time by 60\% through AI-tailoring, with Next.js and Node.js server-side API routes by engineering REST API calls to Google Gemini for LaTeX content generation.}
+\resumeItem{Implemented responsive user interface and interactive components for file drag-and-drop, real-time status feedback, and an embedded LaTeX preview by leveraging Next.js, TypeScript, and TailwindCSS and deployed on Vercel.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{BeatPad: Music Synthesis Tool} $|$ \emph{C\# | .NET Framework | Desktop App Development}}{}
+\resumeItemListStart
+\resumeItem{Engineered a real-time music synthesis desktop application tool using C\# and .NET Framework.}
+\resumeItem{Solved latency issues through multithreading and optimized buffer management, boosting user engagement by 30\%.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{QuestQube: Games Recommendation} $|$ \emph{Node.js | Express.js | MongoDB | JavaScript | EJS}}{}
+\resumeItemListStart
+\resumeItem{Built an AI-powered recommendation platform, increasing user retention by 45\% and cutting search time by 60\%.}
+\resumeItem{Designed and implemented a secure authentication and frontend system using EJS, HTML, CSS, and JavaScript.}
+\resumeItem{Utilized Node.js and Express.js for the backend and MongoDB for the database, integrating OpenAI GPT APIs to enhance user experience and improve API response time by 30\% for AI – Database querying/searching integration.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Activities}
+\resumeSubHeadingListStart
+\resumeSubheading{Freelance Web Developer}{Self-Employed}{}
+\resumeItemListStart
+\resumeItem{Developed SEO-optimized, animated, and responsive websites with Next.js and TypeScript, enhanced online presence for local businesses, growing traffic and customer interaction by 20\%.}
+\resumeItemListEnd
+\resumeSubheading{ClaimCraft: Capstone Contribution}{Frontend Developer}{}
+\resumeItemListStart
+\resumeItem{Contributed 10+ UI features with React.js and React Native, integrating with ASP.NET backend, on an AI-driven claims processing system that reduced manual workload by over 45\% for insurance adjusters handling high-volume requests.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Burnaby, BC}{Diploma, Computer Systems Technology – Concentration: Technical Programming}{Graduated: 2024}
+\resumeItemListStart
+\resumeItem{Relevant Coursework: Data Structures and Algorithms | Web Development | Database Systems | Mobile App Development | Software Engineering | Object-Oriented Programming | Operating Systems | Enterprise Application Projects}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: JavaScript, TypeScript, Python, C\#, Java, SQL} \\
+\textbf{Frontend}{: React.js, Next.js, HTML5, CSS3, React Native, Tailwind CSS, Bootstrap} \\
+\textbf{Backend/Databases}{: Node.js, Express.js, ASP.NET Core, MongoDB, MySQL, PostgreSQL, Firebase} \\
+\textbf{Tools/Others}{: AWS, Azure, Docker, Postman, Figma, Agile, Scrum, DevOps, CI/CD, S3, EC2, JUnit, Jest, Debugging}
+} \\
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
