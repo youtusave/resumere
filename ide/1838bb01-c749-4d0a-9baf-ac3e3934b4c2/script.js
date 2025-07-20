@@ -1,1 +1,3 @@
-/* New File */
+function sayHello() {
+  alert('The compiler works!');
+}
