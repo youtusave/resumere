@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+\textbf{\Huge \scshape Danny} \\ \vspace{1pt}
+% Contact information omitted as none provided in user profile.
+\end{center}
+
+% --- Professional Summary ---
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{Highly motivated Software Engineering Intern with a strong foundation in full-stack web development, backend services, and database management. Proficient in Node.js, React.js, Next.js, MySQL, MongoDB, and AWS services. Eager to apply robust problem-solving skills and quickly adapt to new technologies, including ASP.NET Core, to develop innovative and efficient software solutions.}
+\end{itemize}
+
+% --- Education ---
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology}{Burnaby, BC}{Computer Systems Technology (CST)}{2022 - Present}
+\resumeSubHeadingListEnd
+
+% --- Experience ---
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{SWE Intern}{Vancouver, BC}{BCIT RA (Research Assistant)}{May 2023 - Present}
+\resumeItemListStart
+\resumeItem{Developed and maintained backend services using Node.js, integrating with MySQL databases for research projects.}
+\resumeItem{Managed and optimized database solutions hosted on AWS RDS, ensuring data integrity and efficient performance.}
+\resumeItem{Collaborated with research team to implement robust and scalable software features, enhancing project capabilities.}
+\resumeItemListEnd
+\resumeSubheading{SWE Intern}{Vancouver, BC}{WALLIT}{September 2022 - April 2023}
+\resumeItemListStart
+\resumeItem{Contributed to the development of backend APIs using Node.js for financial technology applications.}
+\resumeItem{Implemented and managed NoSQL database solutions with MongoDB, optimizing data storage and retrieval processes.}
+\resumeItem{Participated in agile development cycles, delivering features and fixes in a fast-paced and collaborative environment.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% --- Projects ---
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Full-Stack Web Applications} $|$ \emph{Next.js, React.js, Node.js}}{Personal Projects}
+\resumeItemListStart
+\resumeItem{Designed and developed responsive user interfaces and robust backend APIs for various web applications.}
+\resumeItem{Utilized modern frontend frameworks (Next.js, React.js) to create dynamic and interactive user experiences.}
+\resumeItem{Implemented server-side logic and database interactions, showcasing end-to-end development capabilities.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% --- Technical Skills ---
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: JavaScript} \\
+\textbf{Backend}{: Node.js} \\
+\textbf{Frontend}{: React.js, Next.js} \\
+\textbf{Databases}{: MySQL, MongoDB, AWS RDS} \\
+\textbf{Cloud Platforms}{: AWS Services} \\
+\textbf{Tools \& Platforms}{: Git, npm, Postman}
+}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
