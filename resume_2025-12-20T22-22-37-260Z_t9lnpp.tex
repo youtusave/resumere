@@ -1,0 +1,152 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+\textbf{\Huge \scshape CHARLES MCTURLAND} \\ \vspace{1pt}
+\small (123) 456-7890 $|$ \href{mailto:cmcturland@email.com}{\underline{cmcturland@email.com}} $|$ New York, NY $|$
+\href{https://www.linkedin.com/in/charlesmcturland}{\underline{LinkedIn}}
+\end{center}
+
+% --- Sections (Edu, Exp, Project, Skills) ---
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Pittsburgh}{Pittsburgh, PA}{B.S. Computer Science}{September 2008 – April 2012}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Engineer}{New York, NY}{Embark}{January 2015 – Current}
+\resumeItemListStart
+\resumeItem{Collaborated closely with product managers to strategically re-architect a complex multi-page web application into a high-performance single-page web-app, directly contributing to a substantial yearly revenue increase of \$1.4M.}
+\resumeItem{Engineered and implemented the core logic for a highly scalable ad-serving platform, designed to efficiently handle over 35 million users, which successfully improved overall page load speed by 15\% after deployment.}
+\resumeItem{Conducted thorough software testing for identifying bugs and optimizing operating speed, meticulously fixing identified issues and documenting processes to enhance development efficiency by 18\%.}
+\resumeItem{Continuously iterated and refined a critical platform for college admissions, working in a collaborative team of 4 engineers to design and implement impactful new features across the software lifecycle.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineer}{Washington, DC}{MarketSmart}{April 2012 – January 2015}
+\resumeItemListStart
+\resumeItem{Developed and maintained robust RESTful APIs that efficiently served dynamic data to the JavaScript front-end, designed to seamlessly handle over 500,000 concurrent user requests.}
+\resumeItem{Built an innovative internal tool leveraging NodeJS and Puppeteer.js to fully automate QA processes and continuous monitoring of a critical donor-facing web application, resulting in a 3\% improvement in Click-Through Rate (CTR).}
+\resumeItem{Performed comprehensive code reviews and executed rigorous testing for three significant new features on the donor-facing web application, which directly led to a 12\% increase in overall contributions.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineer Intern}{Pittsburgh, PA}{Marketing Science Company}{April 2011 – March 2012}
+\resumeItemListStart
+\resumeItem{Partnered effectively with a senior developer to implement scalable RESTful APIs using Django, empowering the analytics team to achieve a 24\% increase in data reporting speed and efficiency.}
+\resumeItem{Utilized Selenium to establish a comprehensive unit testing infrastructure for a key client application, which demonstrably reduced the number of bugs reported by the client by 11\% month over month.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Poker Simulation} $|$ \emph{Python, sci-kit learn, Javascript, cards.js}}{}
+\resumeItemListStart
+\resumeItem{Developed a full-stack web application enabling users to simulate and visually analyze outcomes of poker hands against diverse opponent play styles, leveraging the open-source cards.js library for front-end functionality.}
+\resumeItem{Integrated sci-kit learn in Python to power sophisticated simulations, modeling possible poker outcomes under various user-defined scenarios and strategic choices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages \& Frameworks}{: Python (Django), Javascript (NodeJS, ReactJS, jQuery), HTML5/CSS} \\
+\textbf{Databases}{: SQL (MySQL, PostgreSQL), NoSQL} \\
+\textbf{Cloud \& Tools}{: AWS, Git, Unix}
+}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
