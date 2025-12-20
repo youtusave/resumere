@@ -1,0 +1,154 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+\textbf{\Huge \scshape CHARLES MCTURLAND} \\ \vspace{1pt}
+\small (123) 456-7890 $|$ \href{mailto:cmcturland@email.com}{\underline{cmcturland@email.com}} $|$ New York, NY $|$
+\href{https://www.linkedin.com/in/charlesmcturland}{\underline{LinkedIn}}
+\end{center}
+
+% User requested no summary
+
+% Section Order: Education, Experience, Projects, Technical Skills
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Pittsburgh}{Pittsburgh, PA}{B.S. Computer Science}{September 2008 – April 2012}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Engineer}{New York, NY}{Embark}{January 2015 – current}
+\resumeItemListStart
+\resumeItem{Worked with product managers to re-architect a multi-page web app into a single page web-app, boosting yearly revenue by \$1.4M.}
+\resumeItem{Constructed the logic for a streamlined ad-serving platform that scaled to our 35M users, which improved the page speed by 15\% after implementation.}
+\resumeItem{Tested software for bugs and operating speed, fixing bugs and documenting processes to increase efficiency by 18\%.}
+\resumeItem{Iterated platform for college admissions, collaborating with a group of 4 engineers to create features across the software.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineer}{Washington, DC}{MarketSmart}{April 2012 – January 2015}
+\resumeItemListStart
+\resumeItem{Built RESTful APIs that served data to the JavaScript front-end based on dynamically chosen user inputs that handled over 500,000 concurrent users.}
+\resumeItem{Built internal tool using NodeJS and Puppeteer.js to automate QA and monitoring of donor-facing web app, which improved CTR by 3\%.}
+\resumeItem{Reviewed code and conducted testing for 3 additional features on donor-facing web app that increased contributions by 12\%.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineer Intern}{Pittsburgh, PA}{Marketing Science Company}{April 2011 – March 2012}
+\resumeItemListStart
+\resumeItem{Partnered with a developer to implement RESTful APIs in Django, enabling analytics team to increase reporting speed by 24\%.}
+\resumeItem{Using Selenium I built out a unit testing infrastructure for a client application that reduced the number of bugs reported by the client by 11\% month over month.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Poker Simulation} $|$ \emph{Python, Javascript (cards.js), sci-kit learn}}{}
+\resumeItemListStart
+\resumeItem{Built a full-stack web app to allow users to simulate and visualize outcomes of poker hands against opponents of different play styles using open source cards.js on the front-end.}
+\resumeItem{Utilized sci-kit learn in Python to simulate possible outcomes under different scenarios that the user chose.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages \& Frameworks}{: Python (Django), Javascript (NodeJS, ReactJS, jQuery), HTML5/CSS} \\
+\textbf{Databases}{: SQL (MySQL, PostgreSQL), NoSQL} \\
+\textbf{Cloud \& Tools}{: AWS, Unix, Git}
+}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
