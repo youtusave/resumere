@@ -1,0 +1,172 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Danny Nguyen} \\ \vspace{1pt}
+\small Vancouver, BC $|$ Software Engineer
+\end{center}
+
+\section{Summary}
+Versatile Software Engineer with strong experience in full-stack web development and a focus on high-performance front-end architectures. Expert in React, Next.js, and TypeScript, with a proven track record of optimizing application response times by 40\%. Passionate about web performance, profiling, and building scalable system designs. Experienced in collaborating across technical stacks to deliver high-impact, maintainable software solutions.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: JavaScript (ES6+), TypeScript, Python, C\#, SQL, Bash} \\
+\textbf{Frontend}{: React, Next.js, TailwindCSS, Electron.js, HTML5, CSS3} \\
+\textbf{Backend \& Databases}{: Node.js, Express, ASP.NET Core, REST APIs, PostgreSQL, MySQL, MongoDB} \\
+\textbf{Cloud \& DevOps}{: AWS (EC2, S3, RDS), Azure, Docker, Kubernetes, GitHub Actions, Jenkins, Terraform} \\
+\textbf{Testing \& Tools}{: Jest, Cypress, Playwright, xUnit, Git, Jira, Postman, Azure Data Studio, Figma}
+}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Freelance Software Engineer}{2022 -- Present}
+{Software Engineer}{Remote}
+\resumeItemListStart
+\resumeItem{Designed and deployed high-performance full-stack web applications using Next.js, React, Node.js, MySQL, and MongoDB.}
+\resumeItem{Optimized React components and backend queries to improve application response times by 40\%.}
+\resumeItem{Built and maintained REST APIs to support complex state management and real-time data requirements.}
+\resumeItem{Deployed scalable containerized solutions using AWS and Docker, ensuring 99\% uptime through robust architecture.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Development \& Project Coordination}{2021}
+{Software Engineering Intern}{Hybrid}
+\resumeItemListStart
+\resumeItem{Contributed to backend development and critical system integrations using C\# and ASP.NET Core.}
+\resumeItem{Implemented comprehensive unit tests that reduced production bugs by 25\% prior to deployment.}
+\resumeItem{Collaborated in Agile sprints and improved version control workflows, increasing team velocity by 15\%.}
+\resumeItem{Assisted in technical documentation and cross-team coordination to ensure alignment on project milestones.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Resumere -- AI Resume Builder} $|$ \emph{Next.js, ASP.NET Core, PostgreSQL, AWS S3, Google Gemini API}}{}
+\resumeItemListStart
+\resumeItem{Built a resume generation platform integrating AI-driven content generation and LaTeX compilation for professional output.}
+\resumeItem{Developed content validation logic and auto-suggestion features to improve user data accuracy and completeness.}
+\resumeItem{Leveraged AWS S3 for secure file storage and managed complex state transitions in a Next.js frontend.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Goods-To-Buy Reminder -- Cross-Platform App} $|$ \emph{React Native, Electron.js, ASP.NET Core, WebSocket}}{}
+\resumeItemListStart
+\resumeItem{Developed a collaborative shopping and reminder application featuring secure authentication and live synchronization.}
+\resumeItem{Automated CI/CD pipelines using GitHub Actions for containerized deployment to AWS and Azure environments.}
+\resumeItem{Implemented real-time updates using WebSockets to ensure seamless collaboration across mobile and desktop platforms.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Insurance Claim Visualization Dashboard} $|$ \emph{Python, Chart.js, PostgreSQL}}{}
+\resumeItemListStart
+\resumeItem{Created an interactive analytics dashboard to visualize and identify trends in insurance claim data.}
+\resumeItem{Automated data pipelines for real-time visualization, enabling rapid insight generation and evidence-based decision making.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Lake Washington Institute of Technology (LWIT)}{}
+{Bachelor of Science in Applied Computer Science}{In Progress}
+\resumeSubheading
+{Lake Washington Institute of Technology (LWIT)}{}
+{Diploma in Computer Systems Technology}{}
+\resumeSubHeadingListEnd
+
+\end{document}
