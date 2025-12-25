@@ -1,0 +1,126 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Melissa Ware} \\ \vspace{1pt}
+\small 123-456-7890 $|$ \href{mailto:melissa.ware@example.com}{\underline{melissa.ware@example.com}} $|$
+\href{https://linkedin.com/in/melissaware}{\underline{linkedin.com/in/melissaware}} $|$
+\href{https://melissaware.com}{\underline{melissaware.com}} $|$
+San Francisco, California
+\end{center}
+
+\section{Professional Summary}
+Results-driven professional with over 5 years of experience in digital strategy, content development, and marketing planning. Proven track record of leveraging data-driven insights to increase user engagement by 24\% and scale digital presence across major platforms. Strong background in project management and SEO, seeking to transition into software engineering by applying analytical problem-solving skills and technical communication expertise to build user-centric applications.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Burton Agency}{San Francisco, CA}{Lead Copywriter}{}
+\resumeItemListStart
+\resumeItem{Engineered and executed a comprehensive digital content strategy that increased user engagement on Facebook and Instagram by 24\% within a 6-month period, contributing to record-breaking sales growth.}
+\resumeItem{Managed high-volume content production, delivering 10+ cross-platform posts weekly to scale the Facebook follower base from 2,000 to 12,000 and the Instagram base from 4,000 to 20,000 within 12 months.}
+\resumeItem{Utilized SEO best practices and data analytics to optimize content reach, brand visibility, and user retention across digital channels.}
+\resumeItem{Led project management initiatives, coordinating between marketing and creative teams to ensure technical alignment and consistent brand voice across all digital products.}
+\resumeItem{Developed unique brand voices for diverse clients, focusing on storytelling and creative strategy to drive measurable business outcomes.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Digital Tools \& Technologies}{: SEO Optimization, Adobe Photoshop, Social Media Management Platforms, Digital Marketing Tools} \\
+\textbf{Analytical Skills}{: Data-Driven Strategy, User Engagement Analytics, Marketing Planning, Technical Writing} \\
+\textbf{Professional Skills}{: Project Management, Creative Storytelling, Brand Development, Editing, Content Strategy}
+}
+\end{itemize}
+
+\end{document}
