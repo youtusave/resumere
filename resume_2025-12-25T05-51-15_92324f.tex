@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Danny Nguyen} \\ \vspace{1pt}
+\small Vancouver, BC $|$ \href{mailto:danny.nguyen@email.com}{\underline{danny.nguyen@email.com}} $|$
+\href{https://linkedin.com/in/dannynguyen}{\underline{linkedin.com/in/dannynguyen}} $|$
+\href{https://github.com/dannynguyen}{\underline{github.com/dannynguyen}}
+\end{center}
+
+\section{Professional Summary}
+Performance-driven Software Engineer with experience in building high-performance web applications using React, TypeScript, and ASP.NET Core. Skilled in optimizing front-end rendering and database queries to improve operational efficiency and user experience. Adept at leveraging evidence-based approaches for performance tuning, implementing automated testing suites, and collaborating across cross-functional teams to deliver scalable, high-quality software solutions.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Lake Washington Institute of Technology}{Kirkland, WA}{B.Sc. in Applied Computer Science}{Expected 2026}
+\resumeItemListStart
+\resumeItem{Relevant Coursework: Data Structures \& Algorithms, Software Engineering, Database Systems, Web Development}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{ABC Organization}{Vancouver, BC}{Development \& Project Coordination Intern}{Current}
+\resumeItemListStart
+\resumeItem{Developed internal web tools using ASP.NET Core and React, optimizing front-end performance and improving operational efficiency by 25\%.}
+\resumeItem{Managed agile project cycles and coordinated technical tasks between developers and stakeholders to ensure timely delivery of performant features.}
+\resumeItem{Implemented a SQL Server-backed reporting system, automating complex data analysis and reducing manual reporting effort through optimized data retrieval.}
+\resumeItemListEnd
+
+\resumeSubheading{Freelance}{Remote}{Full Stack Developer}{Ongoing}
+\resumeItemListStart
+\resumeItem{Designed and developed full-stack applications for small businesses using Next.js, Node.js, and MongoDB, focusing on responsiveness and high-performance metrics.}
+\resumeItem{Implemented best practices for SEO and web performance, utilizing Lighthouse and profiling tools to ensure fast page load times and smooth user interactions.}
+\resumeItem{Consulted clients on technical requirements and architecture decisions to build scalable and maintainable front-end infrastructures.}
+\resumeItemListEnd
+
+\resumeSubheading{XYZ Software Solutions}{Vancouver, BC}{Software Engineer Intern}{Previous}
+\resumeItemListStart
+\resumeItem{Built and maintained REST APIs with Node.js and Express for an insurance records management platform, supporting high-volume data transactions.}
+\resumeItem{Integrated PostgreSQL database and optimized complex SQL queries to improve application response times and performance by 30\%.}
+\resumeItem{Wrote comprehensive unit tests using Jest and conducted manual QA testing to ensure the reliability and stability of front-end components.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Resumere – AI Resume Builder} $|$ \emph{Next.js, ASP.NET Core, PostgreSQL, AWS}}{}
+\resumeItemListStart
+\resumeItem{Developed a full-stack resume generation platform integrated with Gemini API for AI-assisted writing and content optimization.}
+\resumeItem{Implemented a LaTeX compiler and AWS S3 integration for efficient storage and retrieval of high-quality resume files.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Insurance Analytics Platform} $|$ \emph{React, Node.js, MySQL, Chart.js}}{}
+\resumeItemListStart
+\resumeItem{Built a data visualization dashboard to analyze claim trends and customer demographics, focusing on interactive and performant front-end components.}
+\resumeItem{Created optimized REST API endpoints to serve real-time analytics data to the React-based user interface.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Goods-To-Buy Reminder App} $|$ \emph{Next.js, React Native, Electron.js, ASP.NET, PostgreSQL}}{}
+\resumeItemListStart
+\resumeItem{Engineered a multi-platform reminder application supporting real-time collaboration via WebSocket for instantaneous state synchronization.}
+\resumeItem{Integrated Google Gemini API and stock price APIs to provide personalized, data-driven purchase recommendations.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: JavaScript, TypeScript, Python, C\#, SQL} \\
+\textbf{Frameworks}{: React, Next.js, Node.js, ASP.NET Core, Express, Electron.js, React Native} \\
+\textbf{Tools \& Platforms}{: Docker, Kubernetes, GitHub Actions, Jenkins, Terraform, AWS (EC2, S3, RDS), Azure} \\
+\textbf{Testing \& Performance}{: Jest, Cypress, Playwright, xUnit, Web Performance Profiling, SEO Optimization}
+}
+\end{itemize}
+
+\end{document}
