@@ -1,0 +1,140 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% --- AI GENERATED CONTENT STARTS HERE ---
+\begin{center}
+\textbf{\Huge \scshape Danny Smith} \\ \vspace{1pt}
+\small (123) 456-7890 $|$ \href{mailto:danny.smith@email.com}{\underline{danny.smith@email.com}} $|$
+\href{https://linkedin.com/in/dannysmithswe}{\underline{linkedin.com/in/dannysmithswe}} $|$
+\href{https://github.com/dannysmithdev}{\underline{github.com/dannysmithdev}}
+\end{center}
+
+\section{Professional Summary}
+\small Highly motivated and results-oriented Software Engineer with 3+ years of experience in developing, testing, and deploying robust and scalable applications. Proficient in multiple programming languages, modern frameworks, and cloud technologies. Eager to leverage strong problem-solving skills and a collaborative spirit to contribute to innovative software solutions.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Technology}{City, State}{Bachelor of Science in Computer Science}{May 2020}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Tech Solutions Inc.}{June 2020 -- Present}{Software Engineer}{Remote}
+\resumeItemListStart
+\resumeItem{Developed and maintained RESTful APIs for a high-traffic e-commerce platform using Python, Django, and PostgreSQL, serving over 100,000 daily users.}
+\resumeItem{Implemented new features and optimized existing functionalities, resulting in a 15\% improvement in API response times and a 10\% reduction in server load.}
+\resumeItem{Collaborated with cross-functional teams to define, design, and ship new modules, contributing to a 20\% increase in user engagement.}
+\resumeItem{Wrote comprehensive unit and integration tests, achieving 90\% code coverage and significantly reducing production bugs.}
+\resumeItem{Utilized AWS services (EC2, S3, RDS) for deployment and infrastructure management, ensuring high availability and scalability of applications.}
+\resumeItemListEnd
+\resumeSubheading{Innovate Labs}{May 2019 -- August 2019}{Software Engineering Intern}{City, State}
+\resumeItemListStart
+\resumeItem{Assisted in the development of a data visualization tool using React and Node.js, improving data analysis efficiency for internal teams.}
+\resumeItem{Contributed to backend development by implementing new endpoints and database schemas (MongoDB), reducing data retrieval time by 25\%.}
+\resumeItem{Participated in daily stand-ups and code reviews, gaining exposure to agile development methodologies and best practices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Real-time Chat Application} $|$ Node.js, Express, Socket.IO, React, MongoDB}{2023}
+\resumeItemListStart
+\resumeItem{Designed and built a full-stack real-time chat application with user authentication, private messaging, and group chat functionalities.}
+\resumeItem{Implemented WebSocket communication for instant message delivery and integrated MongoDB for persistent message storage.}
+\resumeItem{Developed a responsive front-end interface using React, providing a seamless user experience across devices.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Personal Portfolio Website} $|$ HTML5, CSS3, JavaScript, AWS S3/CloudFront}{2022}
+\resumeItemListStart
+\resumeItem{Developed and deployed a personal portfolio website to showcase projects and technical skills.}
+\resumeItem{Utilized AWS S3 for static site hosting and CloudFront for content delivery network (CDN) to ensure fast load times globally.}
+\resumeItem{Implemented responsive design principles, ensuring optimal viewing experience on various screen sizes.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Python, Java, JavaScript, C++, SQL} \\
+\textbf{Web Frameworks}{: Django, Flask, Node.js (Express), React, Spring Boot} \\
+\textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Redis} \\
+\textbf{Cloud \& DevOps}{: AWS (EC2, S3, RDS, Lambda), Docker, Git, Jenkins} \\
+\textbf{Tools \& Methodologies}{: RESTful APIs, Agile/Scrum, JIRA, Confluence, VS Code}
+}
+\end{itemize}
+
+\end{document}
