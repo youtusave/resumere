@@ -1,0 +1,182 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape ALEX CHEN} \\ \vspace{1pt}
+\small Vancouver, BC $|$ \href{mailto:alex.chen.dev@email.com}{\underline{alex.chen.dev@email.com}} $|$ 
+\href{https://linkedin.com/in/alexchen}{\underline{LinkedIn}} $|$
+\href{https://github.com/alexchen}{\underline{GitHub}} $|$
+\href{https://alexchen.dev}{\underline{Portfolio}}
+\end{center}
+
+\section{Professional Summary}
+Detail-oriented Software Engineer with a focus on Backend Systems and Cloud Architecture. Experienced in designing RESTful APIs, optimizing SQL database performance, and managing scalable AWS infrastructure. Proven track record of automating manual workflows and improving data integrity for logistics and service industries. Strong foundation in OOP and distributed systems, seeking to contribute to high-impact mobile event platforms.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Vancouver, BC}{Bachelor of Technology in Computer Systems (Full-time)}{Expected 2026}
+\resumeItemListStart
+\resumeItem{Specialization: Network Security \& Distributed Systems}
+\resumeItem{Relevant Coursework: Advanced Algorithms, Cloud Computing, Operating Systems, Machine Learning}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: C\#, Python, TypeScript, JavaScript, SQL, C++} \\
+\textbf{Backend}{: ASP.NET Core 8, Node.js, Express, Entity Framework Core, SignalR, YARP, Microservices} \\
+\textbf{Databases}{: PostgreSQL (PGVector), MySQL, MongoDB, Redis, SQL Server} \\
+\textbf{Cloud \& DevOps}{: AWS (EC2, RDS, S3, Lambda), Docker, GitHub Actions, Nginx, Linux (Ubuntu), Git} \\
+\textbf{Frontend}{: Next.js, React, Tailwind CSS, Redux, Razor Pages}
+}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Freelance Full Stack Engineer}{Jan 2024 -- Present}{Self-Employed}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Developed high-performance booking platforms for local businesses using Next.js and Node.js, replacing legacy systems and increasing appointment volume by 40\%.}
+\resumeItem{Engineered a centralized admin dashboard to aggregate sales data from multiple channels, managing 10,000+ records in a normalized MySQL database.}
+\resumeItem{Configured scalable AWS architecture using EC2 and RDS with automated S3 backups, ensuring 99.9\% data availability and security.}
+\resumeItemListEnd
+
+\resumeSubheading{NorthShore Supply Co.}{May 2023 -- Aug 2023}{Software Engineering Intern}{North Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Spearheaded migration of inventory tracking to a custom web application; designed a normalized MySQL schema that eliminated data redundancy by 60\%.}
+\resumeItem{Built a RESTful API with Node.js to interface with handheld barcode scanners, reducing picking errors by 35\% through real-time inventory validation.}
+\resumeItem{Optimized heavy SQL join queries for reporting, cutting generation time from 10 minutes to under 5 seconds.}
+\resumeItemListEnd
+
+\resumeSubheading{Valley Construction Ltd.}{May 2022 -- Aug 2022}{Junior Web Developer Intern}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Developed a "Project Portal" using React and AWS S3 for secure storage of high-resolution blueprint PDFs and site photos, improving client satisfaction by 25\%.}
+\resumeItem{Collaborated on technical requirements to replace fragile on-premise file servers with scalable cloud-first solutions.}
+\resumeItem{Implemented responsive UI designs for field managers, ensuring 100\% compatibility across mobile and tablet devices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Engineering Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{CloudForge IDE} $|$ \emph{ASP.NET Core, Docker, MongoDB, YARP, Linux}}{2024}
+\resumeItemListStart
+\resumeItem{Architected a browser-based IDE allowing users to provision isolated Linux environments via Docker Socket integration with sub-300ms startup times.}
+\resumeItem{Built a custom Reverse Proxy using YARP to handle dynamic CNAME resolution and automatic TLS termination for user-hosted projects.}
+\resumeItem{Implemented write-heavy logging operations using MongoDB to store unstructured container logs and file system metadata.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{ClaimsAssist} $|$ \emph{ASP.NET Core, SQL Server, Angular, Agile}}{2023}
+\resumeItemListStart
+\resumeItem{Led backend development for an insurance claims workflow tool, building microservices to handle sensitive claimant PII with strict data integrity.}
+\resumeItem{Automated claim email ingestion into SQL Server, reducing manual data entry for adjusters by approximately 15 hours per week.}
+\resumeItem{Ensured compliance with insurance audits by enforcing relational constraints and strict security protocols in the API layer.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{ResuMatch AI} $|$ \emph{ASP.NET Core, PostgreSQL, PGVector, OpenAI API, SignalR}}{2023}
+\resumeItemListStart
+\resumeItem{Developed a RAG-based optimization tool using Clean Architecture and PGVector for semantic similarity matching between resumes and job descriptions.}
+\resumeItem{Integrated SignalR to stream real-time AI responses and parsing status updates to the frontend for an enhanced user experience.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Awards \& Competitions}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{1st Place, Autonomous Robotics Competition}}{2023}
+\resumeItemListStart
+\resumeItem{Optimized C++ embedded code with custom PID control loops, beating the cohort runner-up time by 15\%.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{1st Place, Local Business Tech Grant}}{2024}
+\resumeItemListStart
+\resumeItem{Awarded \$5,000 for demonstrating significant digital transformation impact within the local Vancouver small business community.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
