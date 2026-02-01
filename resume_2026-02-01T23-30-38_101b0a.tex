@@ -1,0 +1,126 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.3in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\enlargethispage{4\baselineskip}
+\begin{center}
+\textbf{\Huge \scshape Cristiano Ronaldo} \\ \vspace{1pt}
+\small +1 (234) 567-8910 $|$ \href{mailto:ronaldo@gmail.com}{\underline{ronaldo@gmail.com}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Ph.D. in Computer Science}{}
+{Stanford University}{}
+{Sept. 2018 -- May 2023}
+\resumeSubheading
+{M.S. in Computer Science}{}
+{Massachusetts Institute of Technology (MIT)}{}
+{Sept. 2014 -- May 2018}
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Programming Languages}{}
+{Java, Python, C++, SQL, JavaScript}{}
+\resumeSubheading
+{Frameworks \& Libraries}{}
+{Spring Boot, Hibernate, React, Node.js, TensorFlow, PyTorch}{}
+\resumeSubheading
+{Databases}{}
+{PostgreSQL, MySQL, MongoDB, Cassandra}{}
+\resumeSubheading
+{Tools \& Technologies}{}
+{Git, Docker, Kubernetes, Jenkins, AWS, GCP, Azure}{}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Engineer}{}
+{Google}{}
+{June 2023 -- Present}
+\resumeItemListStart
+\resumeItem{Developed and maintained large-scale distributed systems using Java and Go, contributing to core Google Search infrastructure.}
+\resumeItem{Designed and implemented new features for a high-traffic microservice, resulting in a 15\% improvement in response time.}
+\resumeItem{Collaborated with cross-functional teams to define project requirements and deliver solutions on time.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineer}{}
+{Facebook}{}
+{Jan. 2022 -- May 2023}
+\resumeItemListStart
+\resumeItem{Built and optimized backend services for Facebook's news feed using Python and Java, handling millions of requests per second.}
+\resumeItem{Led the development of a new recommendation engine, increasing user engagement by 10\% through personalized content delivery.}
+\resumeItem{Participated in code reviews, mentored junior engineers, and contributed to the team's best practices.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineer Intern}{}
+{Microsoft}{}
+{May 2021 -- Aug. 2021}
+\resumeItemListStart
+\resumeItem{Assisted in the development of a new feature for Azure Active Directory using C\# and .NET, improving user authentication security.}
+\resumeItem{Wrote unit and integration tests to ensure code quality and reliability.}
+\resumeItem{Contributed to the team's agile development process, including sprint planning and daily stand-ups.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{Personal Portfolio Website}{}
+{2022}
+\resumeItemListStart
+\resumeItem{Developed a responsive personal website using React and Node.js to showcase projects and professional experience.}
+\resumeItem{Integrated with a headless CMS for easy content management.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Distributed Key-Value Store}{}
+{2021}
+\resumeItemListStart
+\resumeItem{Designed and implemented a distributed key-value store in Java, demonstrating concepts of consensus algorithms (e.g., Raft).}
+\resumeItem{Focused on fault tolerance and data consistency in a distributed environment.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
