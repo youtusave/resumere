@@ -1,0 +1,121 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.3in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\enlargethispage{4\baselineskip}
+\begin{center}
+\textbf{\Huge \scshape Cristiano Ronaldo} \\ \vspace{1pt}
+\small +1 (234) 567-8910 $|$ \href{mailto:ronaldo@gmail.com}{\underline{ronaldo@gmail.com}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {University of Madeira}
+        {Funchal, Portugal}
+        {Bachelor of Science in Computer Science}
+        {Graduated: 2007}
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\resumeSubHeadingListStart
+    \resumeItem{Programming Languages: C\#, Java, Python, JavaScript, SQL}
+    \resumeItem{Frameworks \& Technologies: ASP.NET Core, .NET Framework, Entity Framework, React, Node.js, Azure, AWS, Docker, Kubernetes}
+    \resumeItem{Databases: SQL Server, PostgreSQL, MongoDB}
+    \resumeItem{Tools: Git, Visual Studio, VS Code, Jira, Confluence}
+    \resumeItem{Methodologies: Agile, Scrum}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Software Engineer}
+        {Google}
+        {Mountain View, CA}
+        {2020 -- Present}
+        \resumeItemListStart
+            \resumeItem{Developed and maintained scalable backend services for Google Search using C\# and ASP.NET Core, handling millions of requests per day.}
+            \resumeItem{Collaborated with cross-functional teams to design and implement new features, improving search relevance and user experience.}
+            \resumeItem{Optimized database queries and application performance, resulting in a 15\% reduction in latency.}
+            \resumeItem{Mentored junior engineers on best practices for C\# development and cloud-native architectures on Google Cloud Platform.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Software Engineer}
+        {Facebook (Meta)}
+        {Menlo Park, CA}
+        {2017 -- 2020}
+        \resumeItemListStart
+            \resumeItem{Built and deployed robust backend systems for Facebook's news feed using C\# and ASP.NET Framework, ensuring high availability and fault tolerance.}
+            \resumeItem{Designed and implemented RESTful APIs for internal and external services, facilitating seamless data integration.}
+            \resumeItem{Contributed to the development of data processing pipelines, enabling efficient analysis of user engagement metrics.}
+            \resumeItem{Participated in code reviews and contributed to the improvement of coding standards and development processes.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Software Engineer}
+        {Microsoft}
+        {Redmond, WA}
+        {2014 -- 2017}
+        \resumeItemListStart
+            \resumeItem{Developed features for Microsoft Azure services using C\# and ASP.NET Core, focusing on reliability and performance.}
+            \resumeItem{Worked on the design and implementation of microservices, improving system modularity and scalability.}
+            \resumeItem{Utilized SQL Server for data storage and retrieval, ensuring data integrity and efficient access.}
+            \resumeItem{Engaged in the full software development lifecycle, from requirements gathering to deployment and maintenance.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {Personal Portfolio Website}
+        {2023}
+        \resumeItemListStart
+            \resumeItem{Developed a dynamic personal portfolio website using ASP.NET Core and React, showcasing personal projects and professional experience.}
+            \resumeItem{Implemented a content management system for easy updating of project details and blog posts.}
+            \resumeItem{Deployed the website on Azure App Service, ensuring accessibility and scalability.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {E-commerce Platform Backend}
+        {2022}
+        \resumeItemListStart
+            \resumeItem{Designed and built the backend API for a simulated e-commerce platform using ASP.NET Core and Entity Framework.}
+            \resumeItem{Implemented features for product management, order processing, and user authentication.}
+            \resumeItem{Integrated with a PostgreSQL database to manage product catalogs and customer orders.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
