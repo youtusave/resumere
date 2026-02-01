@@ -1,0 +1,112 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.3in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\enlargethispage{4\baselineskip}
+\begin{center}
+\textbf{\Huge \scshape Cristiano Ronaldo} \\ \vspace{1pt}
+\small +1 (234) 567-8910 $|$ \href{mailto:ronaldo@gmail.com}{\underline{ronaldo@gmail.com}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{M.S. in Computer Science}{Year of Graduation}
+{University Name}{City, State}
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Programming Languages}{Java, Python, C++, JavaScript}
+{Frameworks \& Libraries}{Spring Boot, Hibernate, React, Node.js}
+{Databases}{SQL, PostgreSQL, MongoDB}
+{Tools \& Technologies}{Git, Docker, AWS, Jenkins}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Engineer}{Dates of Employment}
+{Google}{Mountain View, CA}
+\resumeItemListStart
+\resumeItem{Developed and maintained scalable backend services using Java and Spring Boot, contributing to core product features.}
+\resumeItem{Collaborated with cross-functional teams to design and implement new functionalities, ensuring high code quality and test coverage.}
+\resumeItem{Optimized database queries and application performance, resulting in a 15\% reduction in latency.}
+\resumeItem{Participated in code reviews, mentored junior engineers, and contributed to architectural discussions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineer}{Dates of Employment}
+{Facebook (Meta)}{Menlo Park, CA}
+\resumeItemListStart
+\resumeItem{Designed and implemented robust APIs for a high-traffic social networking platform using Java and related technologies.}
+\resumeItem{Worked on improving the efficiency of data processing pipelines, handling millions of user interactions daily.}
+\resumeItem{Utilized distributed systems principles and technologies to ensure system reliability and scalability.}
+\resumeItem{Contributed to the development of internal tools and frameworks to enhance developer productivity.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineer}{Dates of Employment}
+{Microsoft}{Redmond, WA}
+\resumeItemListStart
+\resumeItem{Developed features for a major cloud computing service, focusing on backend development with Java.}
+\resumeItem{Implemented automated testing strategies and CI/CD pipelines to ensure continuous delivery of high-quality software.}
+\resumeItem{Troubleshot and resolved complex technical issues in a production environment.}
+\resumeItem{Gained experience with large-scale distributed systems and microservices architecture.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{Personal Portfolio Website}{Link to Project}
+\resumeItemListStart
+\resumeItem{Developed a dynamic personal portfolio website using Java (Spring Boot) for the backend and React for the frontend, showcasing projects and skills.}
+\resumeItem{Implemented features such as project filtering, contact form submission, and responsive design.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Open Source Contribution: Java Library}{Link to Project}
+\resumeItemListStart
+\resumeItem{Contributed to a popular open-source Java library by adding new functionalities and fixing bugs.}
+\resumeItem{Wrote comprehensive unit and integration tests to ensure the stability of contributions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
