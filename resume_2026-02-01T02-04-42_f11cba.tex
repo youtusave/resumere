@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\enlargethispage{4\baselineskip}
+
+\begin{center}
+\textbf{\Huge \scshape Ronaldo World Cup} \\ \vspace{1pt}
+\small Vancouver, BC $|$ \href{https://www.linkedin.com/in/your-linkedin-profile-url}{\underline{linkedin.com/in/your-linkedin-profile-url}} $|$ \href{https://github.com/your-github-profile-url}{\underline{github.com/your-github-profile-url}} $|$ \href{https://your-portfolio-url.com}{\underline{your-portfolio-url.com}} $|$ \href{mailto:alex.chen.dev@email.com}{\underline{alex.chen.dev@email.com}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology (BCIT)}{Expected 2026}{Bachelor of Technology in Computer Systems (Full-time)}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Specialization: Network Security \& Distributed Systems}
+\resumeItem{Relevant Coursework: Advanced Algorithms, Cloud Computing, Operating Systems, Machine Learning}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Languages}: C\#, TypeScript, JavaScript, SQL, C, Python}
+\resumeItem{\textbf{Backend}: ASP.NET Core 8, Node.js, Express, Entity Framework Core, SignalR, YARP}
+\resumeItem{\textbf{Frontend}: Next.js, React, Tailwind CSS, Redux, Razor Pages}
+\resumeItem{\textbf{Databases}: PostgreSQL, MySQL, MongoDB, Redis}
+\resumeItem{\textbf{Cloud \& DevOps}: AWS (EC2, RDS, S3, Lambda), Docker, GitHub Actions, Nginx, Linux (Ubuntu)}
+\resumeSubHeadingListEnd
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Freelance Full Stack Engineer}{Jan 2024 – Present}{Self-Employed}{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Developed and deployed a custom high-performance booking platform for 3 local service businesses; replaced legacy phone-booking systems, resulting in a 40\% increase in weekly appointment volume.}
+\resumeItem{Engineered a centralized admin dashboard using React and Node.js that aggregates sales data from multiple channels, storing 10,000+ transaction records in a normalized MySQL database.}
+\resumeItem{Configured a scalable AWS architecture using EC2 for hosting and RDS for persistence, implementing automated daily backups to S3 to ensure 99.9\% data availability.}
+\resumeItemListEnd
+\resumeSubheading{Software Engineering Intern}{May 2023 – Aug 2023}{NorthShore Supply Co. (Logistics/Warehousing)}{North Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Spearheaded the migration of inventory tracking from Excel spreadsheets to a custom web application; designed a normalized MySQL schema that eliminated data redundancy by 60\%.}
+\resumeItem{Built a RESTful API with Node.js to interface with handheld barcode scanners, enabling real-time inventory updates and reducing picking errors by 35\% in the first month.}
+\resumeItem{Optimised heavy SQL join queries for end-of-month reporting, cutting report generation time from ~10 minutes to under 5 seconds.}
+\resumeItemListEnd
+\resumeSubheading{Junior Web Developer Intern}{May 2022 – Aug 2022}{Valley Construction Ltd. (Non-Tech)}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Developed a client-facing "Project Portal" allowing homeowners to view construction timelines and photos, improving client satisfaction scores by 25\%.}
+\resumeItem{Integrated AWS S3 for secure, scalable storage of high-resolution blueprint PDFs and site photos, replacing a fragile on-premise file server.}
+\resumeItem{Implemented responsive UI designs ensuring 100\% mobile compatibility for on-site field managers using tablets.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Engineering Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{CloudForge IDE} $|$ ASP.NET Core, Docker, MongoDB, YARP}{Fullstack Cloud Environment}
+\resumeItemListStart
+\resumeItem{Architected a browser-based IDE (similar to Replit) allowing users to spin up isolated Linux environments.}
+\resumeItem{Built a custom Reverse Proxy using ASP.NET Core and YARP to handle dynamic CNAME resolution, enabling users to host projects on custom subdomains with automatic TLS termination.}
+\resumeItem{Utilized MongoDB to store unstructured container logs and file system metadata, optimizing write-heavy logging operations.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{ResuMatch AI} $|$ ASP.NET Core, PostgreSQL, React, OpenAI API}{RAG-based Resume Optimizer}
+\resumeItemListStart
+\resumeItem{Developed a Clean Architecture solution separating domain logic from infrastructure, using Entity Framework Core with PostgreSQL for structured user data management.}
+\resumeItem{Integrated a vector search pipeline (PGVector) to match resume keywords against job descriptions using semantic similarity, increasing keyword match rates by an average of 40\%.}
+\resumeItem{Designed a high-throughput API capable of parsing complex PDFs and streaming AI responses to the React frontend via SignalR for a real-time user experience.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{ClaimsAssist} $|$ ASP.NET Core, Angular, SQL Server}{Industry Partnered Agile Project}
+\resumeItemListStart
+\resumeItem{Partnered with a consortium of Independent Insurance Adjusters to modernize the claims intake workflow.}
+\resumeItem{Led the backend development in an Agile team of 6, building robust microservices with ASP.NET Core to handle sensitive claimant PII.}
+\resumeItem{Automated the ingestion of claim emails into the database, reducing manual data entry for adjusters by ~15 hours per week per firm.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Awards \& Competitions}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{1st Place, Autonomous Robotics Competition (2023)}: Engineered the fastest line-tracking robot in the cohort.}
+\resumeItem{Optimized C embedded code with custom PID control loops to handle high-speed cornering without derailment, beating the runner-up time by 15\%.}
+\resumeItem{\textbf{1st Place, Local Business Tech Grant}: Awarded \$5,000 for digital transformation impact in the local community.}
+\resumeSubHeadingListEnd
+
+\end{document}
