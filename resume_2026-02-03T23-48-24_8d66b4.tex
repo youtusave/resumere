@@ -1,0 +1,110 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \Huge \scshape DANNY NGUYEN \\
+    \vspace{1pt}
+    \small ndanny@email.com $|$ \href{https://www.linkedin.com/in/dndanny}{\underline{linkedin.com/in/dndanny}} $|$ \href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$ \href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading{British Columbia Institute of Technology (BCIT)}{Burnaby, BC}{Diploma, Computer Systems Technology – Concentration: Technical Programming}{2023 - 2025}
+        \resumeItemListStart
+            \resumeItem{Coursework: Data Structures and Algorithms $|$ Software Development $|$ Database Systems $|$ Object-Oriented Programming}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading{Freelance}{Vancouver, BC}{Web Developer}{Feb 2025 - Current}
+        \resumeItemListStart
+            \resumeItem{Developing and maintaining SEO-optimized, animated, and responsive websites with Next.js, TypeScript, and TailwindCSS.}
+        \resumeItemListEnd
+    \resumeSubheading{BCIT - Industry Partnered Student Project}{Burnaby, BC}{Student Software Engineer}{Sep 2024 - Dec 2024}
+        \resumeItemListStart
+            \resumeItem{Built an AI-driven claims processing system that reduced manual workload by over 45\%, enabling double efficiency for insurance adjusters handling high-volume requests; automated damage analysis from image to report generation.}
+            \resumeItem{Created 10+ UI features (sidebar, header, search) with React.js and React Native, integrating with an ASP.NET backend.}
+        \resumeItemListEnd
+    \resumeSubheading{BCIT Retirees' Association}{Burnaby, BC}{Software Engineer Intern}{Sep 2024 - Dec 2024}
+        \resumeItemListStart
+            \resumeItem{Automated membership management and communication, reducing admin workload by 30\% for 500+ members.}
+            \resumeItem{Designed and structured 15+ interactive features using JavaScript and Chart.js, improving data accessibility, enhancing dashboard responsiveness, and ensuring a smoother user experience.}
+            \resumeItem{Optimized Node.js and Express.js RESTful APIs' performance by tuning SQL queries connected to Amazon RDS (MySQL), reducing 40\% of execution time and enhancing custom graphs/charts visualization rendering efficiency.}
+        \resumeItemListEnd
+    \resumeSubheading{WALLIT}{Burnaby, BC}{Software Engineer Intern}{Apr 2024 - May 2024}
+        \resumeItemListStart
+            \resumeItem{Researched and developed a secure backend architecture for a financial transaction management application; implemented data encryption, authentication, CRUD operations, and system integrations.}
+            \resumeItem{Built RESTful APIs and designed MongoDB schemas using Node.js, Express.js, and TypeScript, cutting latency by 30\%.}
+            \resumeItem{Optimized mobile API integration in React Native, reducing sync latency by 25\% for faster financial data retrieval.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading{AI-Integrated Quiz Platform}{[View Web]}
+        \resumeItemListStart
+            \resumeItem{Architected a multimodal RAG-lite engine capable of digesting PDF/Image contexts via Google Gemini Vision, utilizing a hybrid sync/async batch processing pipeline to reduce AI token costs by 90\% and circumvent Vercel serverless timeouts.}
+            \resumeItem{Engineered an enterprise-grade security layer implementing stateless JWT authentication, Role-Based Access Control, and an exponential backoff rate-limiting algorithm to mitigate IDOR and DoS vectors.}
+            \resumeItem{Established a rigorous CI/CD workflow with GitHub Actions and Jest/MongoDB Memory Server, achieving 100\% test coverage across unit, integration, and security suites to ensure zero-regression deployments.}
+        \resumeItemListEnd
+    \resumeProjectHeading{Resume \& Cover Letter Builder AI}{[View Web]}
+        \resumeItemListStart
+            \resumeItem{Reduced resume customization time by 60\% through AI-tailoring, with Next.js and Node.js server-side API routes by engineering REST API calls to Google Gemini for LaTeX content generation.}
+            \resumeItem{Implemented responsive user interface and interactive components for file drag-and-drop, real-time status feedback, and an embedded LaTeX preview by leveraging Next.js, TypeScript, and TailwindCSS and deployed on Vercel.}
+        \resumeItemListEnd
+    \resumeProjectHeading{Music Social Jukebox}{[View Web]}
+        \resumeItemListStart
+            \resumeItem{Architected a real-time, event-driven state machine using WebSockets and Redis, achieving sub-100ms queue synchronization across distributed clients while enforcing data consistency for late-joining users.}
+            \resumeItem{Engineered a custom Web Audio API oscillator solution to bypass modern browser background resource throttling, ensuring continuous media execution even when the host tab is minimized or inactive.}
+            \resumeItem{Designed a frictionless onboarding flow via dynamic QR deep-linking and a serverless YouTube Data API proxy, eliminating user authentication friction while securing API credentials server-side.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeItemListStart
+    \resumeItem{Languages: JavaScript $|$ TypeScript $|$ C\# $|$ SQL $|$ Python}
+    \resumeItem{Frontend: React.js $|$ Next.js $|$ HTML5 $|$ CSS3 $|$ React Native $|$ Tailwind CSS $|$ Bootstrap}
+    \resumeItem{Backend/Databases: Node.js $|$ Express.js $|$ ASP.NET Core $|$ MongoDB $|$ Redis $|$ MySQL $|$ PostgreSQL}
+    \resumeItem{Tools/Others: AWS $|$ Azure $|$ Docker $|$ Postman $|$ Figma $|$ Agile $|$ Scrum $|$ DevOps $|$ CI/CD $|$ S3 $|$ EC2 $|$ xUnit $|$ Jest}
+\resumeItemListEnd
+
+\end{document}
