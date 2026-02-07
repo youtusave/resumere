@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+% --- Default Header - AI will replace this based on profile ---
+\begin{center}
+\textbf{\Huge \scshape Seungjae Baek} \\ \vspace{1pt}
+\small (778) 697-0449 $|$ \href{mailto:sbj7788@gmail.com}{\underline{sbj7788@gmail.com}} $|$
+\href{https://sjbportfolio.com}{\underline{sjbportfolio.com}} $|$
+\href{https://github.com/SJB7788}{\underline{github.com/SJB7788}}
+\end{center}
+
+% --- Default Sections - AI will replace these ---
+
+\section{Professional Summary}
+Highly motivated Full Stack Developer with strong academic and practical experience in modern web and API development, specializing in .NET (C\#, ASP.NET Core, Blazor) and AI-enabled technologies. Proven ability to design, develop, and deploy scalable applications, integrate Large Language Models (LLMs) like Google Gemini and OpenAI GPT, and manage cloud infrastructure (Azure, AWS, Docker). Adept at working in Agile environments and collaborating with cross-functional teams to deliver high-quality, maintainable solutions.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology}{Burnaby, BC}{Applied Computer Science (Network Security Applications Development Option), Bachelor of Science}{Sept 2025 – Dec 2027}
+\resumeSubheading{British Columbia Institute of Technology}{Burnaby, BC}{Computer Systems Technology, Diploma}{Jan 2023 – Dec 2024}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{BCIT Retirees Association}{Sept 2024 – Dec 2024}{Full Stack Developer}{Burnaby, BC}
+\resumeItemListStart
+\resumeItem{Collaborated with BCITRA stakeholders to convert a legacy desktop system into a full stack production web application.}
+\resumeItem{Delivered project on time within a 6-week window, aligning with client expectations and technical requirements through bi-weekly Zoom meetings.}
+\resumeItem{Built and deployed scalable backend services using Node.js and MySQL (AWS RDS), and managed deployment using AWS EC2 and Nginx reverse proxy.}
+\resumeItem{Led UI/UX development using HTML, CSS, and JavaScript under Agile sprint cycles.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{AethersJournal} $|$ \emph{.NET, Blazor, ASP.NET Core, PostgreSQL, Docker, Azure, Gemini API}}{\href{https://github.com/SJB7788/AethersJournal}{\underline{github.com/SJB7788/AethersJournal}}}
+\resumeItemListStart
+\resumeItem{Developed journaling platform using Blazor and ASP.NET Core with a reflective user experience.}
+\resumeItem{Integrated AI-assisted reflection features using Google Gemini API to generate summaries and guided reflective questions, demonstrating LLM integration and prompt engineering concepts.}
+\resumeItem{Implemented persistent storage using PostgreSQL with Entity Framework Core and migrations.}
+\resumeItem{Containerized the application with Docker and prepared for cloud deployment on Azure.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{ArtificialGains} $|$ \emph{React.js, Node.js, Express, MongoDB, Python, Docker, OpenAI's GPT API}}{\href{https://youtu.be/2NQdpDmuq1E}{\underline{youtu.be/2NQdpDmuq1E}}}
+\resumeItemListStart
+\resumeItem{Collaborated in a team of 3 to build a full-stack AI-powered fitness and diet app using OpenAI's GPT API for content generation and training insights.}
+\resumeItem{Integrated frontend features with backend APIs providing AI-generated content and training insights, showcasing RESTful API development and consumption.}
+\resumeItem{Collaborated on Docker-based containerization and deployment workflows.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Praxis} $|$ \emph{Next.js, Tailwind, Node.js, Express, MySQL, Docker}}{\href{https://github.com/KagaSumi/Praxis}{\underline{github.com/KagaSumi/Praxis}}}
+\resumeItemListStart
+\resumeItem{Developed a Q\&A platform for students with a containerized microservice architecture.}
+\resumeItem{Built a Next.js front end consuming a backend API through a Nginx reverse-proxy gateway.}
+\resumeItem{Worked with a Node.js backend integrating Google Gemini API for AI-powered question answering.}
+\resumeItem{Participated in Docker-based deployment and multi-service configuration for local and production environments.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Network Security Analysis \& Intrusion Detection (Academic Project)} $|$ \emph{Linux, TCP/IP, nftables, Snort, Wireshark}}{}
+\resumeItemListStart
+\resumeItem{Analyzed TCP and UDP traffic patterns by generating controlled attack scenarios and validating on-wire behavior using packet captures.}
+\resumeItem{Designed and tested firewall rules using nftables to evaluate attacker-side and victim-side mitigation strategies.}
+\resumeItem{Developed custom Snort rules to detect malicious traffic and validated IDS alerts against captured network data.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: C\#, C, JavaScript, TypeScript, Python, Go, Java, SQL} \\
+\textbf{Frontend}{: Blazor (.NET), Next.js, HTML5, CSS3, Tailwind} \\
+\textbf{Backend \& APIs}{: ASP.NET Core, Node.js, Express, REST API Development} \\
+\textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Firebase, Firestore} \\
+\textbf{Cloud \& DevOps}{: Azure, AWS (EC2, RDS), Docker, Git, GitHub Actions, Linux, Nginx} \\
+\textbf{AI/LLMs}{: Google Gemini API, OpenAI GPT API, Prompt Engineering Concepts} \\
+\textbf{Security \& Networking}{: TCP/IP, nftables, Snort, Wireshark}
+}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
