@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{sourcesanspro}
+
+% Page styling
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % No header rule
+\renewcommand{\footrulewidth}{0pt} % No footer rule
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in} % No padding for tabular cells
+
+% Section formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom resume commands
+\newcommand{\resumeItem}[1]{\item\small{{\#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\#1} & \#2 \\
+    \textit{\small\#3} & \textit{\small \#4} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small\#1 & \#2 \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Header
+\begin{center}
+  \textbf{\Huge \scshape Your Name} \\
+  \vspace{1pt}
+  \small 123-456-7890 $|$ \href{mailto:email@domain.com}{\underline{email@domain.com}} $|$ \href{https://www.linkedin.com/in/yourprofile}{\underline{linkedin.com/in/yourprofile}} $|$ \href{https://github.com/yourusername}{\underline{github.com/yourusername}}
+\end{center}
+
+% --- Sections ---
+
+% Education
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Degree Name} % e.g., Master of Science in Computer Science
+    {University Name} % e.g., Stanford University
+    {City, State} % e.g., Stanford, CA
+    {Month Year} % e.g., May 2023
+  \resumeItemListStart
+    \resumeItem{GPA: X.XX/4.00}
+    \resumeItem{Relevant Coursework: Course 1, Course 2, Course 3}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Experience
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Your Job Title} % e.g., Software Engineer
+    {Company Name} % e.g., Google
+    {City, State} % e.g., Mountain View, CA
+    {Month Year -- Month Year} % e.g., June 2023 -- Present
+  \resumeItemListStart
+    \resumeItem{Developed and implemented feature X, resulting in Y\% increase in user engagement.}
+    \resumeItem{Collaborated with a team of Z engineers to design and deploy scalable microservices.}
+    \resumeItem{Utilized [Technology A] and [Technology B] to optimize database performance by X\% .}
+  \resumeItemListEnd
+  \resumeSubheading
+    {Previous Job Title} % e.g., Intern
+    {Previous Company Name} % e.g., Microsoft
+    {City, State} % e.g., Redmond, WA
+    {Month Year -- Month Year} % e.g., May 2022 -- August 2022
+  \resumeItemListStart
+    \resumeItem{Assisted in the development of [Project Name] using [Language/Tool].}
+    \resumeItem{Conducted research on [Topic] and presented findings to the team.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {Project Name 1} % e.g., Personal Portfolio Website
+    {Link to Project/GitHub} % e.g., \href{https://github.com/yourusername/project1}{\underline{GitHub}}
+  \resumeItemListStart
+    \resumeItem{Built a responsive personal portfolio website using HTML, CSS, and JavaScript.}
+    \resumeItem{Integrated [Feature] to showcase [Content].}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {Project Name 2} % e.g., Machine Learning Model for [Task]
+    {Link to Project/GitHub} % e.g., \href{https://github.com/yourusername/project2}{\underline{GitHub}}
+  \resumeItemListStart
+    \resumeItem{Developed a machine learning model using Python and scikit-learn to [Task].}
+    \resumeItem{Achieved X\% accuracy on the test dataset.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Skills
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Programming Languages:}
+    {Python, Java, C++, JavaScript, SQL}
+    {} {}
+  \resumeSubheading
+    {Frameworks/Libraries:}
+    {React, Node.js, Django, Flask, TensorFlow, PyTorch, scikit-learn}
+    {} {}
+  \resumeSubheading
+    {Tools/Technologies:}
+    {Git, Docker, Kubernetes, AWS, Azure, Jira}
+    {} {}
+  \resumeSubheading
+    {Languages:}
+    {English (Native), Spanish (Fluent)}
+    {} {}
+\resumeSubHeadingListEnd
+
+% Awards and Recognition (Optional)
+% \section{Awards and Recognition}
+% \resumeSubHeadingListStart
+%   \resumeItem{Recipient of the [Award Name], [Year]}
+%   \resumeItem{[Scholarship Name] Scholarship, [Year]}
+% \resumeSubHeadingListEnd
+
+% --- End of Resume ---
+\end{document}
+
+
+**Explanation and How to Use:**
+
+1.  **Save as `.tex`:** Save this code in a plain text file with a `.tex` extension (e.g., `resume.tex`).
+2.  **Compile:** You'll need a LaTeX distribution (like TeX Live or MiKTeX) installed on your computer. You can then compile the `.tex` file using a LaTeX editor (like TeXstudio, VS Code with a LaTeX extension, or Overleaf online) or from the command line:
+    bash
+    pdflatex resume.tex
+    
+    You might need to run it twice for the references to resolve correctly.
+3.  **Fill in Your Details:**
+    *   `\textbf{\Huge \scshape Your Name}`: Replace `Your Name` with your actual name.
+    *   `123-456-7890`: Replace with your phone number.
+    *   `email@domain.com`: Replace with your email address.
+    *   `linkedin.com/in/yourprofile`: Replace with your LinkedIn profile URL.
+    *   `github.com/yourusername`: Replace with your GitHub profile URL.
+    *   **Education Section:** Fill in your degree, university, location, and graduation date. Add relevant coursework or GPA if desired.
+    *   **Experience Section:**
+        *   Replace `Your Job Title`, `Company Name`, `City, State`, and dates for each position.
+        *   Use `\resumeItem{...}` to list your responsibilities and achievements. **Crucially, use action verbs and quantify your accomplishments whenever possible.**
+    *   **Projects Section:**
+        *   Replace `Project Name` and provide a link to your project's repository or live demo.
+        *   Use `\resumeItem{...}` to describe the project and your role.
+    *   **Skills Section:** Customize the categories and list your relevant skills.
+    *   **Optional Sections:** Uncomment and fill in the "Awards and Recognition" section if applicable.
+
+**Key Features of the Template:**
+
+*   **Clean Design:** Uses `sourcesanspro` font for a modern look.
+*   **Structured Sections:** Clearly defined sections for Education, Experience, Projects, and Skills.
+*   **Custom Commands:** `\resumeItem`, `\resumeSubheading`, `\resumeProjectHeading` simplify formatting.
+*   **Hyperlinks:** `hyperref` package allows for clickable email and website links.
+*   **Page Margins:** `fullpage` package and manual adjustments ensure good use of space.
+*   **No Headers/Footers:** `fancyhdr` is used to clear default headers and footers.
+
+This is a solid foundation. Remember to tailor the content of each bullet point to the specific job you're applying for, highlighting the most relevant skills and experiences. Good luck!
