@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Elon Musk} \\ \vspace{1pt}
+% Contact details omitted as per instructions to avoid placeholders for missing information.
+\end{center}
+
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+Highly innovative and visionary leader with extensive experience in architecting, developing, and scaling complex software and hardware systems across diverse industries, from internet payments to aerospace and artificial intelligence. Proven track record of spearheading technological breakthroughs, managing large engineering teams, and delivering transformative products at global scale. Seeking to leverage deep technical expertise and entrepreneurial drive as a Software Engineer at Google.
+}
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Pennsylvania}{Philadelphia, PA}{Bachelor of Science in Physics, Bachelor of Arts in Economics}{1997}
+\resumeSubheading{Stanford University}{Stanford, CA}{Ph.D. Program in Applied Physics and Materials Science}{Enrolled 1995 (briefly)}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{SpaceX}{Hawthorne, CA}{CEO, CTO, Lead Designer}{2002 – Present}
+\resumeItemListStart
+\resumeItem{Led the development of complex flight software for orbital rockets (Falcon series) and spacecraft (Dragon), ensuring high reliability and autonomous operation in mission-critical environments.}
+\resumeItem{Architected and oversaw the deployment of Starlink, a global satellite internet constellation, involving massive distributed systems, advanced network protocols, and ground infrastructure software.}
+\resumeItem{Pioneered reusable rocket technology, significantly reducing launch costs through sophisticated software-controlled landing systems and autonomous diagnostics.}
+\resumeItem{Managed large engineering teams, fostering an environment of rapid iteration and innovation in mission-critical software and hardware integration.}
+\resumeItemListEnd
+\resumeSubheading{Tesla, Inc.}{Austin, TX}{CEO, Product Architect}{2008 – Present}
+\resumeItemListStart
+\resumeItem{Directed the software architecture and development for Tesla's Autopilot and Full Self-Driving (FSD) systems, utilizing advanced AI/ML models, computer vision, and real-time embedded software.}
+\resumeItem{Oversaw the design and implementation of vehicle infotainment systems, battery management software, and over-the-air update capabilities for millions of vehicles.}
+\resumeItem{Scaled manufacturing processes through sophisticated automation software, integrating robotics and data-driven operational intelligence.}
+\resumeItem{Guided the development of the Supercharger network, including software for charging management, grid integration, and user experience.}
+\resumeItemListEnd
+\resumeSubheading{Neuralink Corp.}{Fremont, CA}{Co-founder, CEO}{2016 – Present}
+\resumeItemListStart
+\resumeItem{Initiated and guided the development of high-bandwidth brain-computer interface (BCI) technology, involving complex signal processing, embedded systems, and data science for neural data.}
+\resumeItem{Led software efforts for implantable devices and external applications for neural interaction.}
+\resumeItemListEnd
+\resumeSubheading{X.com / PayPal}{Palo Alto, CA}{Co-founder, Chairman, CEO}{1999 – 2002}
+\resumeItemListStart
+\resumeItem{Co-architected and scaled a pioneering online payment system, handling millions of transactions and integrating robust security protocols.}
+\resumeItem{Developed critical backend infrastructure for financial transactions, fraud detection, and user account management.}
+\resumeItem{Managed rapid growth and integration challenges, contributing to the development of one of the internet's first widely adopted financial software platforms.}
+\resumeItemListEnd
+\resumeSubheading{Zip2 Corporation}{Palo Alto, CA}{Co-founder, CEO}{1995 – 1999}
+\resumeItemListStart
+\resumeItem{Developed and deployed an internet-based city guide with mapping and directory services, serving major newspaper clients.}
+\resumeItem{Engineered early web applications, database systems, and content management tools for dynamic online information delivery.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Starlink Software Infrastructure} $|$ \emph{Distributed Systems, Satellite Communications, C++, Python, Linux}}{2015 – Present}
+\resumeItemListStart
+\resumeItem{Designed and implemented the core software stack for a global low-latency satellite internet service, managing thousands of interconnected satellites and ground stations.}
+\resumeItem{Developed robust network protocols, routing algorithms, and data processing pipelines for high-throughput, reliable data transmission in a challenging space environment.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Tesla Autopilot/FSD Platform} $|$ \emph{AI/ML, Computer Vision, Embedded Systems, C++, Python, CUDA}}{2014 – Present}
+\resumeItemListStart
+\resumeItem{Spearheaded the creation of a sophisticated autonomous driving software platform, integrating neural networks for perception, planning, and control.}
+\resumeItem{Optimized real-time performance on custom hardware, enabling advanced driver-assistance features and progressing towards full self-driving capabilities.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Programming Languages}{: C++, Python, JavaScript, SQL} \\
+\textbf{Software \& Systems}{: Distributed Systems, AI/Machine Learning, Deep Learning, Computer Vision, Embedded Systems, Real-time Operating Systems, Cloud Computing Principles, Microservices, APIs, Data Structures, Algorithms, Network Protocols, Robotics Control, Linux} \\
+\textbf{Tools \& Platforms}{: Git, Docker, Kubernetes (conceptual), TensorFlow, PyTorch, Jira, Agile/Scrum} \\
+\textbf{Domains}{: Aerospace Software, Autonomous Vehicles, FinTech, Satellite Communications, Brain-Computer Interfaces, Web Development, E-commerce}
+}
+\end{itemize}
+
+\end{document}
