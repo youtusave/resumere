@@ -1,0 +1,163 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Danny D.} \\ \vspace{1pt}
+\small \href{https://linkedin.com/in/dndanny/}{\underline{linkedin.com/in/dndanny}} $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}}
+\end{center}
+
+\section{Professional Summary}
+\small{Software Engineer pursuing an MS in Computer Science with 3 internships at Google, AWS, and Microsoft. Proven expertise in designing and implementing large-scale distributed systems, cloud-native applications, and machine learning solutions. Proficient in Python, Go, Java, C++, and modern web technologies, with a strong foundation in data structures, algorithms, and system design.}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Georgia Institute of Technology}{Atlanta, Georgia}{Master of Science, Computer Science}{Aug 2022 -- Dec 2024 (Expected)}
+\resumeSubheading{University of California, Berkeley}{Berkeley, California}{Bachelor of Science, Computer Science}{Aug 2018 -- May 2022}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Google}{Mountain View, California}{Software Engineer Intern}{May 2023 -- Aug 2023}
+\resumeItemListStart
+\resumeItem{Developed a distributed system to manage and optimize resource allocation for large-scale machine learning training jobs.}
+\resumeItem{Implemented a RESTful API for system interaction and integrated with existing Google infrastructure.}
+\resumeItem{Contributed to improving system reliability and scalability, reducing resource contention by 15\%.}
+\resumeItemListEnd
+\resumeSubheading{Amazon Web Services (AWS)}{Seattle, Washington}{Software Development Engineer Intern}{May 2022 -- Aug 2022}
+\resumeItemListStart
+\resumeItem{Designed and implemented a serverless data processing pipeline using AWS Lambda, S3, and DynamoDB.}
+\resumeItem{Developed a real-time monitoring dashboard using AWS CloudWatch and Grafana.}
+\resumeItem{Improved data processing efficiency by 20\% and reduced operational costs by 10\%.}
+\resumeItemListEnd
+\resumeSubheading{Microsoft}{Redmond, Washington}{Software Engineer Intern}{May 2021 -- Aug 2021}
+\resumeItemListStart
+\resumeItem{Contributed to the development of a new feature for Microsoft Teams, focusing on front-end implementation using React and TypeScript.}
+\resumeItem{Collaborated with a team of engineers to deliver high-quality code and ensure seamless user experience.}
+\resumeItem{Participated in code reviews and agile development sprints.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Distributed File System (DFS)} $|$ \emph{Go, gRPC, Raft, Distributed Systems}}{}
+\resumeItemListStart
+\resumeItem{Implemented a simplified distributed file system with features like replication, fault tolerance, and consistency using gRPC and Raft consensus algorithm.}
+\resumeItem{Achieved high availability and data durability across multiple nodes.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Real-time Object Detection System} $|$ \emph{Python, TensorFlow, Keras, Flask, OpenCV, Machine Learning}}{}
+\resumeItemListStart
+\resumeItem{Developed a real-time object detection system using YOLOv4 and a custom dataset.}
+\resumeItem{Deployed the model on a Flask server with a web interface for live video stream processing, achieving 90\% accuracy on test data.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{E-commerce Platform} $|$ \emph{React, Node.js, Express, MongoDB, AWS EC2, JavaScript}}{}
+\resumeItemListStart
+\resumeItem{Built a full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment gateway integration.}
+\resumeItem{Deployed on AWS EC2.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: Python, Java, C++, Go, JavaScript, TypeScript} \\
+\textbf{Cloud Platforms}{: AWS, Google Cloud Platform (GCP), Azure} \\
+\textbf{Frameworks/Libraries}{: React, Node.js, Spring Boot, TensorFlow, PyTorch} \\
+\textbf{Databases}{: SQL, NoSQL (DynamoDB, MongoDB)} \\
+\textbf{Tools/DevOps}{: Docker, Kubernetes, Git, Kafka, RESTful APIs, Microservices} \\
+\textbf{Concepts}{: Distributed Systems, Machine Learning, Data Structures, Algorithms, System Design, Object-Oriented Programming, Agile Methodologies}
+}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
