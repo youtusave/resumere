@@ -1,0 +1,189 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE (AI WILL GENERATE FROM HERE DOWN) %%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Seungjae Baek} \\ \vspace{1pt}
+\small (778) 697-0449 $|$ \href{mailto:sbj7788@gmail.com}{\underline{sbj7788@gmail.com}} $|$
+\href{https://linkedin.com/in/seungjae-baek/}{\underline{linkedin.com/in/seungjae-baek/}} $|$
+\href{https://github.com/SJB7788}{\underline{github.com/SJB7788}} $|$
+\href{https://sjbportfolio.com}{\underline{sjbportfolio.com}}
+\end{center}
+
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Full Stack Developer \& Infrastructure Engineer}{Mar 2026}{BCIT Retirees Association}{Jan 2026}
+\resumeItemListStart
+\resumeItem{Identified and pitched a cost-reduction strategy to stakeholders, proposing an on-premises server migration from AWS.}
+\resumeItem{Migrated MySQL database and application services from AWS RDS/EC2 to a self-hosted local server, reducing cloud costs by 95\%.}
+\resumeItem{Configured Cloudflare Tunnels to securely expose the local server to the internet without a static IP.}
+\resumeItem{Transferred domain registration to Cloudflare, consolidating DNS management and eliminating AWS Route 53 costs.}
+\resumeItemListEnd
+\resumeSubheading{Full Stack Developer (Practicum)}{Dec 2024}{BCIT Retirees Association}{Sept 2024}
+\resumeItemListStart
+\resumeItem{Collaborated with BCITRA stakeholders to convert a legacy desktop system into a full stack production web application.}
+\resumeItem{Delivered on time in a 6-week project window, aligning with client expectations and technical requirements through bi-weekly Zoom meetings.}
+\resumeItem{Built and deployed scalable backend services using Node.js and MySQL (AWS RDS), and managed deployment using AWS EC2 and Nginx reverse proxy.}
+\resumeItem{Led UI/UX development using HTML, CSS, and JavaScript under Agile sprint cycles.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{AethersJournal} $|$ \emph{.NET, Blazor, ASP.NET Core, PostgreSQL, Docker, Azure, Gemini API}}{\href{https://github.com/SJB7788/AethersJournal}{\underline{GitHub}}}
+\resumeItemListStart
+\resumeItem{Integrated AI-assisted reflection features using Google Gemini API to generate summaries and guided reflective questions.}
+\resumeItem{Implemented persistent storage using PostgreSQL with Entity Framework Core and migrations.}
+\resumeItem{Implemented user authentication and authorization using ASP.NET Core Identity.}
+\resumeItem{Automated deployment to Azure using GitHub Actions CI/CD pipeline.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Praxis} $|$ \emph{Next.js, Tailwind, Node.js, Express, MySQL, Docker}}{\href{https://github.com/KagaSumi/Praxis}{\underline{GitHub}}}
+\resumeItemListStart
+\resumeItem{Collaborated in a three-person team to containerize and deploy a microservice architecture using Docker for local and production environments.}
+\resumeItem{Built a Next.js frontend consuming a Node.js/Express backend through a Nginx reverse-proxy gateway, integrating Google Gemini API for AI-powered question answering.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{ArtificialGains} $|$ \emph{React.js, Node.js, Express, MongoDB, Python, Docker}}{\href{https://youtu.be/2NQdpDmuq1E}{\underline{YouTube}}}
+\resumeItemListStart
+\resumeItem{Collaborated in a team of 3 to build a full-stack AI-powered fitness and diet app using OpenAI's GPT API for content generation and training insights.}
+\resumeItem{Built frontend in React.js with TypeScript, designed mock-ups in Photoshop, iterated UX via peer feedback.}
+\resumeItem{Integrated frontend features with backend APIs providing AI-generated content and training insights.}
+\resumeItem{Collaborated on Docker-based containerization and deployment workflows.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Network Security Analysis \& Intrusion Detection (Academic Project)} $|$ \emph{Linux, TCP/IP, nftables, Snort, Wireshark}}{}
+\resumeItemListStart
+\resumeItem{Analyzed TCP and UDP traffic patterns by generating controlled attack scenarios and validating on-wire behavior using packet captures.}
+\resumeItem{Designed and tested firewall rules using nftables to evaluate attacker-side and victim-side mitigation strategies.}
+\resumeItem{Compared the effectiveness of layered defenses by analyzing logs, counters, and packet captures under different firewall configurations.}
+\resumeItem{Developed custom Snort rules to detect malicious traffic and validated IDS alerts against captured network data.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{SnowScraper} $|$ \emph{HTML, CSS, JavaScript, jQuery, Firebase, Firestore}}{\href{https://snowscraper-7b189.web.app}{\underline{Website}}}
+\resumeItemListStart
+\resumeItem{Collaborated in a team of 3 to build a web app that scrapes and compares prices of winter products across multiple ecommerce platforms.}
+\resumeItem{Integrated frontend features with backend data from an automated web scraping service.}
+\resumeItem{Built a responsive frontend using HTML, CSS, Bootstrap, and jQuery.}
+\resumeItem{Integrated Firebase Authentication and Firestore for user accounts, product storage, and wishlist functionality.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Self Portfolio} $|$ \emph{HTML, CSS, JavaScript, Go, Docker}}{\href{https://sjbportfolio.com}{\underline{Website}}}
+\resumeItemListStart
+\resumeItem{Designed and built a personal portfolio website to reinforce core frontend fundamentals without relying on frameworks or AI assistance.}
+\resumeItem{Implemented the frontend using vanilla HTML, CSS, and JavaScript, focusing on layout, styling, and browser interactions.}
+\resumeItem{Developed a lightweight Go web server to serve static content and handle basic HTTP routing logic.}
+\resumeItem{Containerized the application using Docker to support consistent deployment and portability.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Reliable UDP Communication System} $|$ \emph{C, CMake, Python, hping3}}{\href{https://github.com/SJB7788/Reliable-UDP-Communication}{\underline{GitHub}}}
+\resumeItemListStart
+\resumeItem{Designed and implemented a custom reliable messaging protocol over UDP using sequence numbers, acknowledgments, timeouts, and retransmission logic.}
+\resumeItem{Built a client, server, and proxy to simulate packet loss and delay under configurable network conditions.}
+\resumeItem{Simulated and analyzed system behavior under real-world network conditions to model reliability, latency, and recovery.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Frontend}{: Next.js, Blazor (.NET), HTML5, CSS3, Tailwind} \\
+\textbf{Backend}{: Node.js, Express, ASP.NET Core, REST API Development} \\
+\textbf{Languages}{: JavaScript, TypeScript, C, C\#, SQL, Python, Java, Go} \\
+\textbf{DevOps \& Infrastructure}{: Linux, Docker, Git, GitHub Actions, Nginx, Cloud Deployment (AWS, Azure)}
+}
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology}{2025 September – 2028 December}{Bachelor of Science, Applied Computer Science}{Network Security Applications Development Option}
+\resumeSubheading{British Columbia Institute of Technology}{2023 January - 2024 December}{Diploma, Computer Systems Technology}{}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
