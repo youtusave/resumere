@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titrule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE %%%%%%%%
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+\textbf{\Huge \scshape Dat Nguyen} \\ \vspace{1pt}
+\small Ho Chi Minh City, Vietnam $|$ tdn.datnguyen@gmail.com $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$
+\href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+% --- Education ---
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {British Columbia Institute of Technology}{Burnaby, BC, Canada}
+  {Diploma, Computer Systems Technology -- Concentration: Technical Programming with C\# \& ASP.NET Core}{}
+\resumeSubHeadingListEnd
+
+% --- Experience ---
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Town Narrow Vanders}{May 2026 -- Feb 2028}
+  {Software Developer}{Richmond, BC, Canada}
+  \resumeItemListStart
+    \resumeItem{Engineered robust contractor, employee, and equipment management systems using ASP.NET Core, Angular, MSSQL, and Azure, optimizing internal tracking operations and boosting team coordination by 30\%.}
+    \resumeItem{Integrated Gemini AI workflows to auto-generate daily work summaries from raw activity logs, effectively saving project managers tens of hours per week on manual reporting and documentation.}
+    \resumeItem{Developed responsive progress tracking, waste logging, and automated backup features using Azure Blob Storage, significantly enhancing real-time job site visibility and data accountability.}
+    \resumeItem{Built project management modules for scheduling, clock-ins/outs, safety checkouts, tools \& inventory tracking, and task management integration with automated email reports and notifications for managers.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Freelance}{Feb 2025 -- Present}
+  {Web Developer}{Metro Vancouver, BC, Canada}
+  \resumeItemListStart
+    \resumeItem{Built SEO-optimized, mobile-first web applications using Next.js, TypeScript, and Tailwind CSS for local retail and wine businesses, enhancing digital presence and growing traffic by 20\%.}
+    \resumeItem{Integrated external APIs for secure payment processing and implemented headless CMS configurations, enabling clients to independently manage inventory and update dynamic store content.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Retirees Association BCITRA}{Sep 2024 -- Dec 2024}
+  {Software Developer Intern}{Burnaby, BC, Canada}
+  \resumeItemListStart
+    \resumeItem{Automated membership management and communication, reducing admin workload by 30\% for 500+ members.}
+    \resumeItem{Designed and structured 15+ interactive features using React.js with JavaScript, improving data accessibility, enhancing dashboard responsiveness, and ensuring a smoother user experience.}
+    \resumeItem{Optimized Node.js and Express.js RESTful APIs' performance by tuning SQL queries connected to Amazon RDS (PostgreSQL), reducing 40\% of execution time and enhancing custom graphs/charts visualization rendering efficiency.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {WALLIT}{Apr 2024 -- Aug 2024}
+  {Software Developer Intern}{Burnaby, BC, Canada}
+  \resumeItemListStart
+    \resumeItem{Researched and developed a secure backend architecture for a financial transaction management application; implemented data encryption, authentication, CRUD operations, and system integrations.}
+    \resumeItem{Built RESTful APIs and designed PostgreSQL schemas using ASP.NET Core, cutting latency by 30\%.}
+    \resumeItem{Optimized mobile API integration in React and React Native, reducing sync latency by 25\% for faster financial data retrieval.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% --- Projects ---
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Resume Builder AI} $|$ \emph{ASP.NET Core, Angular, TypeScript, PostgreSQL, AWS EC2 \& S3, Tectonic, Gemini API}}{}
+  \resumeItemListStart
+    \resumeItem{Decreased resume customization time by 60\% through engineering ASP.NET Core APIs to integrate Gemini AI.}
+    \resumeItem{Delivered real-time document rendering by embedding the Tectonic LaTeX engine within an Angular frontend.}
+    \resumeItem{Enhanced user interaction by building responsive drag-and-drop file components using GSAP and TypeScript.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{AI-Integrated Quiz Platform} $|$ \emph{Node.js, Express.js, Next.js, React, MongoDB, Gemini API}}{}
+  \resumeItemListStart
+    \resumeItem{Reduced AI token costs by 90\% by architecting a multimodal RAG-lite engine using Gemini Vision.}
+    \resumeItem{Circumvented serverless timeouts by implementing a hybrid sync/async batch processing pipeline.}
+    \resumeItem{Mitigated IDOR and DoS vulnerabilities by engineering a JWT security layer with exponential backoff rate-limiting.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% --- Technical Skills ---
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: C\#, JavaScript, TypeScript, SQL, Python} \\
+\textbf{Backend \& Databases}{: ASP.NET Core, Node.js, Express.js, PostgreSQL, SQL Server, MySQL, MongoDB, Redis} \\
+\textbf{Frontend}{: Angular, React.js, Next.js, HTML5, CSS3, React Native, GSAP, Tailwind CSS, Bootstrap} \\
+\textbf{Cloud \& Tools}{: AWS (S3, EC2, RDS), Azure, Docker, CI/CD, REST API, Postman, xUnit, Jest, Figma} \\
+\textbf{Methodologies \& Others}{: Systems Design, Data Structures \& Algorithms, AI Agents, AI Integration, Agile, Scrum, DevOps}
+}}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
