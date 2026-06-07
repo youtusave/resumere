@@ -1,0 +1,141 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Dat Nguyen} \\ \vspace{1pt}
+\small Ho Chi Minh City $|$ \href{mailto:tdn.datnguyen@gmail.com}{\underline{tdn.datnguyen@gmail.com}} $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$
+\href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Developer}{Apr 2028 – Sep 2028}{Pièces Auto d'Alex}{Vancouver, BC, Canada}
+\resumeItemListStart
+\resumeItem{Engineered comprehensive management modules for clients, inventory, vendors, orders, logistics, and platform operations using React.js, Next.js, and Node.js.}
+\resumeItem{Improved logistics management and business operations processes by 25\%, significantly reducing manual product tracking time through automated workflows.}
+\resumeItem{Developed cross-platform mobile solutions with React Native and implemented responsive UI components using GSAP, backed by PostgreSQL for robust data persistence.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Developer}{May 2026 – Feb 2028}{Town Narrow Vanders}{Richmond, BC, Canada}
+\resumeItemListStart
+\resumeItem{Engineered robust contractor, employee, and equipment management systems using ASP.NET Core, Angular, MSSQL, and Azure, optimizing internal tracking operations and boosting team coordination by 30\%.}
+\resumeItem{Integrated Gemini AI workflows to auto-generate daily work summaries from raw activity logs, saving project managers tens of hours per week on manual documentation.}
+\resumeItem{Built project management modules for scheduling, clock-ins/outs, and safety checkouts, with automated email notifications and Azure Blob Storage for real-time job site data accountability.}
+\resumeItemListEnd
+
+\resumeSubheading{Web Developer}{Feb 2025 – Current}{Freelance}{Metro Vancouver, BC, Canada}
+\resumeItemListStart
+\resumeItem{Built SEO-optimized, mobile-first web applications using Next.js, TypeScript, and Tailwind CSS, growing client traffic by 20\%.}
+\resumeItem{Integrated external APIs for secure payment processing and implemented headless CMS configurations for dynamic inventory management.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Developer Intern}{Sep 2024 – Dec 2024}{Retirees Association BCITRA}{Burnaby, BC, Canada}
+\resumeItemListStart
+\resumeItem{Automated membership management and communication, reducing admin workload by 30\% for 500+ members.}
+\resumeItem{Optimized Node.js and Express.js RESTful APIs by tuning SQL queries in Amazon RDS (PostgreSQL), reducing execution time by 40\%.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Developer Intern}{Apr 2024 – Aug 2024}{WALLIT}{Burnaby, BC, Canada}
+\resumeItemListStart
+\resumeItem{Developed secure backend architecture for financial applications; implemented data encryption, authentication, and CRUD operations using ASP.NET Core.}
+\resumeItem{Designed PostgreSQL schemas and optimized mobile API integration in React Native, reducing sync latency by 25\%.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Resume Builder AI} $|$ \emph{ASP.NET Core, Angular, TypeScript, PostgreSQL, AWS, Gemini API}}{[Live]}
+\resumeItemListStart
+\resumeItem{Decreased resume customization time by 60\% by integrating Gemini AI via ASP.NET Core APIs.}
+\resumeItem{Delivered real-time document rendering by embedding the Tectonic LaTeX engine within an Angular frontend.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{AI-Integrated Quiz Platform} $|$ \emph{Node.js, Express.js, Next.js, MongoDB, Gemini Vision}}{[Live]}
+\resumeItemListStart
+\resumeItem{Reduced AI token costs by 90\% by architecting a multimodal RAG-lite engine.}
+\resumeItem{Mitigated IDOR and DoS vulnerabilities by engineering a JWT security layer with exponential backoff rate-limiting.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology}{Burnaby, BC}{Diploma, Computer Systems Technology}{Concentration: Technical Programming with C\# \& ASP.NET Core}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: C\#, JavaScript, TypeScript, SQL, Python} \\
+\textbf{Backend/Databases}{: ASP.NET Core, Node.js, Express.js, PostgreSQL, SQL Server, MongoDB, Redis, Amazon RDS} \\
+\textbf{Frontend}{: Angular, React.js, Next.js, React Native, GSAP, Tailwind CSS} \\
+\textbf{Cloud/DevOps}{: AWS (S3, EC2, RDS), Azure, Docker, CI/CD, REST API}
+}
+\end{itemize}
+
+\end{document}
