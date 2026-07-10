@@ -1,0 +1,125 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Kylian Mbappé} \\ \vspace{5pt}
+\small Elite Professional Athlete $|$ Main Attacker Candidate \\
+\end{center}
+
+\section{Professional Summary}
+World-class forward with a proven track record of elite goal-scoring, high-speed transition play, and tactical versatility. Seeking to leverage extensive experience at the highest levels of European football to serve as the Main Attacker for Manchester United, driving offensive efficiency and championship-caliber performance.
+
+\section{Performance Statistics}
+\begin{center}
+\begin{tikzpicture}[xscale=0.8, yscale=0.4]
+\draw[->] (0,0) -- (10,0) node[right] {Season};
+\draw[->] (0,0) -- (0,6) node[above] {Goals};
+\foreach \x/\y in {1/26, 2/39, 3/33, 4/30, 5/42, 6/41, 7/52}
+\filldraw (\x, \y/10) circle (2pt) node[above] {\tiny \y};
+\draw[thick, blue] (1,2.6) -- (2,3.9) -- (3,3.3) -- (4,3.0) -- (5,4.2) -- (6,4.1) -- (7,5.2);
+\end{tikzpicture}
+\end{center}
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Paris Saint-Germain}{2017--2024}{Main Attacker}{Paris, France}
+\resumeItemListStart
+\resumeItem{Scored 256 goals in 308 appearances, becoming the club's all-time leading goalscorer.}
+\resumeItem{Secured 6 Ligue 1 titles and multiple domestic cups, providing consistent offensive output in high-pressure environments.}
+\resumeItem{Maintained an average of over 0.8 goals per game across all competitions.}
+\resumeItemListEnd
+
+\resumeSubheading{AS Monaco}{2015--2017}{Forward}{Monaco}
+\resumeItemListStart
+\resumeItem{Breakout performer leading the team to a Ligue 1 title and UEFA Champions League semi-final.}
+\resumeItem{Developed elite tactical awareness and finishing capabilities at a professional level.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{International Career}
+\resumeSubHeadingListStart
+\resumeSubheading{France National Team}{2017--Present}{Forward / Captain}{International}
+\resumeItemListStart
+\resumeItem{Winner of the 2018 FIFA World Cup, contributing 4 goals throughout the tournament.}
+\resumeItem{Awarded the Golden Boot at the 2022 FIFA World Cup with 8 goals, including a hat-trick in the final.}
+\resumeItem{Consistent leadership and offensive dominance on the global stage.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Offensive Skills}{: Clinical Finishing, Sprint Acceleration, Dribbling, Tactical Positioning} \\
+\textbf{Performance Metrics}{: High Conversion Rate, Playmaking, Pressing Efficiency} \\
+\textbf{Professional Attributes}{: Leadership, Big-game Composure, Versatility}
+}
+\end{itemize}
+
+\end{document}
