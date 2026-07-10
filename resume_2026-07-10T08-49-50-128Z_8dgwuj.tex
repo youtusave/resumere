@@ -1,0 +1,132 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Kylian Mbappé} \\ \vspace{1pt}
+\small World-Class Forward $|$ Elite Goalscorer $|$ International Football Professional
+\end{center}
+
+\section{Professional Summary}
+Dynamic and prolific forward with a proven track record of elite performance in top-tier European leagues and international competition. Seeking to leverage exceptional speed, clinical finishing, and tactical versatility as the Main Attacker for Manchester United. Committed to delivering high-impact offensive output and championship-level results.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Real Madrid CF}{2024--Present}{Forward}{Madrid, Spain}
+\resumeItemListStart
+\resumeItem{Lead offensive transition and tactical execution in La Liga and UEFA Champions League.}
+\resumeItemListEnd
+
+\resumeSubheading{Paris Saint-Germain}{2017--2024}{Forward}{Paris, France}
+\resumeItemListStart
+\resumeItem{All-time top goalscorer for the club with over 250 competitive goals.}
+\resumeItem{Secured multiple Ligue 1 titles and domestic cups through consistent offensive dominance.}
+\resumeItem{Maintained an average of 0.8+ goals per game across all domestic competitions.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{International Career}
+\resumeSubHeadingListStart
+\resumeSubheading{French National Team}{2017--Present}{Captain / Forward}{France}
+\resumeItemListStart
+\resumeItem{Led team to FIFA World Cup victory (2018) and Final appearance (2022).}
+\resumeItem{Awarded Golden Boot at the 2022 FIFA World Cup.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Performance Analytics}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar, width=12cm, height=5cm,
+    ylabel={Goals Scored},
+    symbolic x coords={20/21, 21/22, 22/23, 23/24},
+    xtick=data,
+    nodes near coords,
+]
+\addplot coordinates {(20/21,42) (21/22,39) (22/23,41) (23/24,44)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Offensive Skills}{: Clinical Finishing, Explosive Acceleration, Dribbling, Tactical Positioning} \\
+\textbf{Leadership}{: International Captaincy, High-Pressure Decision Making} \\
+\textbf{Versatility}{: Left Wing, Center Forward, Second Striker}
+}
+\end{itemize}
+
+\section{Professional Highlights}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Individual Accolades} $|$ \emph{Elite Performance}}{}
+\resumeItemListStart
+\resumeItem{FIFA World Cup Golden Boot Winner (2022)}
+\resumeItem{Multiple Ligue 1 Player of the Year Awards}
+\resumeItem{Consistent presence in UEFA Team of the Year}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
