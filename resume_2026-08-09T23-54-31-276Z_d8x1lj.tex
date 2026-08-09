@@ -1,0 +1,150 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Dat Nguyen} \\ \vspace{1pt}
+\small Ho Chi Minh City $|$ \href{mailto:tdn.datnguyen@gmail.com}{\underline{tdn.datnguyen@gmail.com}} $|$
+\href{https://github.com/dndanny}{\underline{github.com/dndanny}} $|$
+\href{https://dndanny.vercel.app}{\underline{dndanny.vercel.app}}
+\end{center}
+
+\section{Professional Summary}
+Software Engineer with over 3 years of experience in full-stack development, specializing in Node.js, React, and AWS cloud architecture. Proven track record in building scalable web applications, automating business workflows with AI integration, and optimizing database performance. Seeking to leverage technical expertise in a Junior Software Engineer role in Ho Chi Minh City.
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{KOZU – F\&B Consulting Service}{Vancouver, BC, Canada}{Full-Stack Software Developer}{Feb 2025 – Apr 2026}
+\resumeItemListStart
+\resumeItem{Collaborated in an agile team of 7 to architect internal tools using ASP.NET Core, Angular, and MS SQL Server on Azure, improving client operational workflows by 30\%.}
+\resumeItem{Engineered high-throughput REST APIs and bidirectional gRPC services in ASP.NET Core for real-time inventory, order, and supply chain data synchronization.}
+\resumeItem{Integrated Gemini AI APIs and Webhook listeners to automate market research and reporting, reducing manual overhead for consulting advisors.}
+\resumeItemListEnd
+
+\resumeSubheading{Self-employed}{Vancouver, BC, Canada}{Web Developer}{Feb 2024 – Jun 2026}
+\resumeItemListStart
+\resumeItem{Designed and developed modern animated web applications using Next.js and React, significantly enhancing digital visibility for business clients.}
+\resumeItem{Optimized backend workflows with Node.js and Express.js, integrating third-party AI, Payment, Tracking, and Email APIs.}
+\resumeItemListEnd
+
+\resumeSubheading{Retirees Association BCITRA / WALLIT}{Burnaby, BC, Canada}{Software Developer Intern}{Apr 2024 – Dec 2024}
+\resumeItemListStart
+\resumeItem{BCITRA: Automated membership management for 500+ members using React.js and Node.js, reducing admin workload by 30\% and optimizing PostgreSQL queries to cut API execution time by 40\%.}
+\resumeItem{WALLIT: Developed secure backend architecture using Node.js, PostgreSQL, and AWS (RDS \& EC2), reducing API latency by 30\% and mobile sync latency by 25\%.}
+\resumeItemListEnd
+
+\resumeSubheading{ACafeTanPhu.VN}{Ho Chi Minh City, Vietnam}{Web Developer}{Jul 2026}
+\resumeItemListStart
+\resumeItem{Built a responsive, mobile-optimized website using Next.js and Node.js, deployed on Vercel.}
+\resumeItem{Integrated MoMo and VNPay payment gateways to enable direct online ordering.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Resume Builder AI} $|$ \emph{ASP.NET Core, Angular, TypeScript, PostgreSQL, AWS}}{}
+\resumeItemListStart
+\resumeItem{Decreased resume customization time by 60\% by integrating Gemini AI APIs.}
+\resumeItem{Delivered real-time document rendering by embedding the Tectonic LaTeX engine within an Angular frontend.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{AI-Integrated Quiz Platform} $|$ \emph{Node.js, Express.js, Next.js, React, MongoDB}}{}
+\resumeItemListStart
+\resumeItem{Reduced AI token costs by 90\% by architecting a multimodal RAG-lite engine using Gemini Vision.}
+\resumeItem{Implemented JWT security layer with exponential backoff rate-limiting to mitigate IDOR and DoS vulnerabilities.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education \& Certifications}
+\resumeSubHeadingListStart
+\resumeSubheading{British Columbia Institute of Technology}{Burnaby, BC, Canada}{Computer Systems Technology}{Dec 2024}
+\resumeSubheading{AWS Certified Developer – Associate}{AWS-123456789}{Cloud Proficiency, Systems Design, DevOps, Security}{2026}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item{
+\textbf{Languages}{: TypeScript, JavaScript, SQL, C\#, Python} \\
+\textbf{Frontend}{: React.js, Next.js, Angular, HTML5, CSS3, GSAP, Tailwind CSS} \\
+\textbf{Backend/Databases}{: Node.js, Express.js, ASP.NET Core, PostgreSQL, SQL Server, MongoDB, Redis} \\
+\textbf{Tools \& DevOps}{: AWS (EC2, S3, RDS), Azure, Docker, CI/CD, REST API, Git, Figma}
+}
+\end{itemize}
+
+\end{document}
